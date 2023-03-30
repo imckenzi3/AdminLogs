@@ -1,49 +1,5 @@
 "EditScreen1 As screen.'phoneDetailEditLayout_ver3.0'":
 
-    RectQuickActionBar3 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    IconCancel1 As icon.Cancel:
-        AccessibleLabel: =Self.Tooltip
-        Height: =88
-        Icon: =Icon.Cancel
-        OnSelect: =ResetForm(EditForm1);Back()
-        PaddingBottom: =22
-        PaddingLeft: =22
-        PaddingRight: =22
-        PaddingTop: =22
-        TabIndex: =0
-        Tooltip: ="Cancel item"
-        Width: =88
-        ZIndex: =2
-
-    IconAccept1 As icon.Check:
-        AccessibleLabel: =Self.Tooltip
-        Height: =88
-        Icon: =Icon.Check
-        OnSelect: =SubmitForm(EditForm1)
-        PaddingBottom: =22
-        PaddingLeft: =22
-        PaddingRight: =22
-        PaddingTop: =22
-        TabIndex: =0
-        Tooltip: ="Submit item"
-        Width: =88
-        X: =Parent.Width - Self.Width
-        ZIndex: =3
-
-    LblAppName3 As label:
-        Fill: =RGBA(58, 58, 58, 0)
-        Height: =88
-        Size: =27
-        Text: ="AdminLogs"
-        Width: =Parent.Width - IconCancel1.Width - IconAccept1.Width
-        Wrap: =false
-        X: =80
-        ZIndex: =4
-
     EditContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
@@ -55,6 +11,7 @@
             LayoutMinHeight: =640
 
         Header_4 As Header:
+            AlignInContainer: =AlignInContainer.Stretch
             LayoutMinHeight: =640
 
         BrowseNavContainer_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -264,7 +221,6 @@
             LayoutMinWidth: =320
             OnSuccess: =Back()
             Width: =Parent.Width
-            Y: =RectQuickActionBar3.Height
             ZIndex: =3
 
             "'Name of Citizen/Company _DataCard2_1' As typedDataCard.textualEditCard":
