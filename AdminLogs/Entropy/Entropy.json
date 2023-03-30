@@ -123,7 +123,6 @@
     "StarVisible8_1": 219,
     "Status of Call_DataCard1_1": 149,
     "Status of Call_DataCard2_1": 213,
-    "Subtitle1_1": 97,
     "Subtitle1_2": 185,
     "TextSearchBox1": 11,
     "Title1_1": 96,
@@ -132,7 +131,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/30/2023 19:06:12",
+  "HeaderLastSavedDateTimeUTC": "03/30/2023 19:11:42",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "b679bdb3-5ae6-471b-9e4b-d6502a3966e6": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/1e6a9b6028dd4468a38dfeda58c8254d\""
@@ -283,7 +282,6 @@
     "StarVisible8_1": {},
     "Status of Call_DataCard1_1": {},
     "Status of Call_DataCard2_1": {},
-    "Subtitle1_1": {},
     "Subtitle1_2": {},
     "TextSearchBox1": {},
     "Title1_1": {},
@@ -403,7 +401,6 @@
     "StarVisible8_1": 58,
     "Status of Call_DataCard1_1": 87,
     "Status of Call_DataCard2_1": 52,
-    "Subtitle1_1": 12,
     "Subtitle1_2": 12,
     "TextSearchBox1": 0,
     "Title1_1": 11,

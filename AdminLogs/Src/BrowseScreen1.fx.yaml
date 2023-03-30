@@ -140,20 +140,8 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 104
                 X: =32
+                Y: =28
                 ZIndex: =1
-
-            Subtitle1_1 As label:
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.'Auto Notes'
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =32
-                ZIndex: =2
 
             Body1_1 As label:
                 Height: =Self.Size * 4
