@@ -1,0 +1,604 @@
+"DetailScreen1 As screen.'phoneDetailViewLayout_ver3.0'":
+
+    DetailContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =7
+
+        Header_2 As Header:
+            AlignInContainer: =AlignInContainer.Stretch
+            HomeScreen: =BrowseScreen1
+
+        DetailNavContainer As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(56, 96, 178, 1)
+            Height: =100
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            IconBackarrow1_1 As icon.ChevronLeft:
+                AccessibleLabel: =Self.Tooltip
+                Height: =88
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Navigate(BrowseScreen1, ScreenTransition.None)
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                TabIndex: =0
+                Tooltip: ="Back to list"
+                Width: =88
+                ZIndex: =1
+
+            LblAppName1_2 As label:
+                Fill: =RGBA(58, 58, 58, 0)
+                Height: =88
+                Size: =27
+                Text: ="Details"
+                Width: =Parent.Width - Self.X - IconBackarrow1_1.Width - IconEdit1_1.Width - IconDelete1_1.Width
+                Wrap: =false
+                X: =20
+                ZIndex: =2
+
+            IconDelete1_1 As icon.Trash:
+                AccessibleLabel: =Self.Tooltip
+                DisplayMode: =If(!IsBlank(BrowseGallery1_1.Selected) && DataSourceInfo([@AdminLogs], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
+                Height: =88
+                Icon: =Icon.Trash
+                OnSelect: =Remove([@AdminLogs], BrowseGallery1_1.Selected); If (IsEmpty(Errors([@AdminLogs], BrowseGallery1_1.Selected)), Back())
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                TabIndex: =0
+                Tooltip: ="Delete this item"
+                Width: =88
+                X: =Parent.Width - IconEdit1_1.Width - Self.Width
+                ZIndex: =3
+
+            IconEdit1_1 As icon.Edit:
+                AccessibleLabel: =Self.Tooltip
+                DisplayMode: =If(DataSourceInfo([@AdminLogs], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
+                Height: =88
+                Icon: =Icon.Edit
+                OnSelect: =EditForm(EditForm1);Navigate(EditScreen1, ScreenTransition.None)
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                TabIndex: =0
+                Tooltip: ="Edit this item"
+                Width: =88
+                X: =Parent.Width - Self.Width
+                ZIndex: =4
+
+        DetailForm1_1 As formViewer:
+            DataSource: =[@AdminLogs]
+            Height: =Parent.Height - DetailForm1_1.Y
+            Item: =BrowseGallery1_1.Selected
+            Width: =Parent.Width
+            ZIndex: =3
+
+            "'Name of Citizen/Company _DataCard1_1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="NameofCitizen_x002f_Company"
+                Default: =ThisItem.'Name of Citizen/Company '
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"NameofCitizen_x002f_Company")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                WidthFit: =true
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey1_1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1_1 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1_1.Y + DataCardKey1_1.Height + 5
+                    ZIndex: =2
+
+            "'Purpose of Call_DataCard1_1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="PurposeofCall"
+                Default: =ThisItem.'Purpose of Call'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"PurposeofCall")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                WidthFit: =true
+                X: =0
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey2_1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue2_1 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey2_1.Y + DataCardKey2_1.Height + 5
+                    ZIndex: =2
+
+            "'Employee Contacted_DataCard1_1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="EmployeeContacted"
+                Default: =ThisItem.'Employee Contacted'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"EmployeeContacted")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue3_1.Selected
+                Width: =640
+                WidthFit: =true
+                X: =0
+                Y: =2
+                ZIndex: =1
+
+                DataCardKey3_1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue3_1 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@AdminLogs].'Employee Contacted')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices(AdminLogs.'Employee Contacted',DataCardValue3_1.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey3_1.Y + DataCardKey3_1.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1_1 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue3_1.Y + DataCardValue3_1.Height
+                    ZIndex: =3
+
+                StarVisible1_1 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey3_1.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey3_1.Y
+                    ZIndex: =4
+
+            "'Employee Department/Ministry_DataCard1_1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="EmployeeDepartment_x002f_Ministr"
+                Default: =ThisItem.'Employee Department/Ministry'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"EmployeeDepartment_x002f_Ministr")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                WidthFit: =true
+                X: =0
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey4_1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue4_1 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey4_1.Y + DataCardKey4_1.Height + 5
+                    ZIndex: =2
+
+            "'Status of Call_DataCard1_1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="StatusofCall"
+                Default: =ThisItem.'Status of Call'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"StatusofCall")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue5_1.Selected
+                Width: =640
+                WidthFit: =true
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey5_1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue5_1 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@AdminLogs].'Status of Call')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(AdminLogs.'Status of Call',DataCardValue5_1.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey5_1.Y + DataCardKey5_1.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage2_1 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue5_1.Y + DataCardValue5_1.Height
+                    ZIndex: =3
+
+                StarVisible2_1 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey5_1.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey5_1.Y
+                    ZIndex: =4
+
+            "'Additional Notes_DataCard1_1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="AdditionalNotes"
+                Default: =ThisItem.'Additional Notes'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"AdditionalNotes")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                WidthFit: =true
+                X: =0
+                Y: =5
+                ZIndex: =1
+
+                DataCardKey6_1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue6_1 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey6_1.Y + DataCardKey6_1.Height + 5
+                    ZIndex: =2
+
+            Created_DataCard1 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Created"
+                Default: =ThisItem.Created
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Created")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =6
+                ZIndex: =1
+
+                DataCardKey13 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue13 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                    ZIndex: =2
+
+            "'Created By_DataCard1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Author"
+                Default: =ThisItem.'Created By'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Author")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue14.Selected
+                Width: =640
+                X: =0
+                Y: =7
+                ZIndex: =1
+
+                DataCardKey14 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue14 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@AdminLogs].'Created By')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices(AdminLogs.'Created By',DataCardValue14.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage9 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue14.Y + DataCardValue14.Height
+                    ZIndex: =3
+
+                StarVisible9 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey14.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey14.Y
+                    ZIndex: =4
+
+            Modified_DataCard1 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Modified"
+                Default: =ThisItem.Modified
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Modified")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =8
+                ZIndex: =1
+
+                DataCardKey15 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue15 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                    ZIndex: =2
+
+            "'Modified By_DataCard1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Editor"
+                Default: =ThisItem.'Modified By'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Editor")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue16.Selected
+                Width: =640
+                X: =0
+                Y: =9
+                ZIndex: =1
+
+                DataCardKey16 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue16 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@AdminLogs].'Modified By')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices(AdminLogs.'Modified By',DataCardValue16.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage10 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue16.Y + DataCardValue16.Height
+                    ZIndex: =3
+
+                StarVisible10 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey16.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey16.Y
+                    ZIndex: =4
+
+        Footer_2 As Footer:
+            ZIndex: =4
+

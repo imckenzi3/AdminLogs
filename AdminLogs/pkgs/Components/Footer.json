@@ -104,7 +104,7 @@
         "Name": "Label1",
         "Parent": "Footer",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 112,
+        "PublishOrderIndex": 84,
         "Rules": [
           {
             "Category": "Data",
@@ -455,7 +455,7 @@
         "Name": "Label1_1",
         "Parent": "Footer",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 113,
+        "PublishOrderIndex": 85,
         "Rules": [
           {
             "Category": "Data",
