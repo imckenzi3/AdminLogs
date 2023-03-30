@@ -12,7 +12,6 @@
         RadiusTopRight: =7
         Size: =21
         Width: =Parent.Width
-        Y: =RectQuickActionBar1.Height
         ZIndex: =6
 
     SearchIcon1 As icon.Search:
