@@ -325,9 +325,9 @@
 
                 DataCardValue10_1 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =DataCardValue9_1.Selected.Department
                     DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =DisplayMode.View
                     Height: =70
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
