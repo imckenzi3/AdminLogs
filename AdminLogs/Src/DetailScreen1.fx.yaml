@@ -201,10 +201,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].EmployeeContacted)
+                    Items: =Choices([@AdminLogs].'Employee Contacted')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(AdminLogs.EmployeeContacted,DataCardValue3_1.SearchText)
+                    SearchItems: =Choices(AdminLogs.'Employee Contacted',DataCardValue3_1.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
@@ -312,10 +312,10 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].StatusofCall)
+                    Items: =Choices([@AdminLogs].'Status of Call')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(AdminLogs.StatusofCall,DataCardValue5_1.SearchText)
+                    SearchItems: =Choices(AdminLogs.'Status of Call',DataCardValue5_1.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Width: =Parent.Width - 60
@@ -459,10 +459,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].Author)
+                    Items: =Choices([@AdminLogs].'Created By')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(AdminLogs.Author,DataCardValue14.SearchText)
+                    SearchItems: =Choices(AdminLogs.'Created By',DataCardValue14.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
@@ -568,10 +568,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].Editor)
+                    Items: =Choices([@AdminLogs].'Modified By')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(AdminLogs.Editor,DataCardValue16.SearchText)
+                    SearchItems: =Choices(AdminLogs.'Modified By',DataCardValue16.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person

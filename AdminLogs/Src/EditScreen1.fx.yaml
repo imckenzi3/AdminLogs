@@ -74,6 +74,77 @@
             Width: =Parent.Width
             ZIndex: =3
 
+            "'Status of Call_DataCard2' As typedDataCard.comboBoxEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="StatusofCall"
+                Default: =ThisItem.'Status of Call'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"StatusofCall")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue2.Selected
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey2 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue2 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@AdminLogs].StatusofCall)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(AdminLogs.StatusofCall,DataCardValue2.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage2 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue2.Y + DataCardValue2.Height
+                    ZIndex: =3
+
+                StarVisible2 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey2.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey2.Y
+                    ZIndex: =4
+
             "'Name of Citizen/Company _DataCard2_1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="NameofCitizen_x002f_Company"
@@ -255,10 +326,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].EmployeeContacted)
+                    Items: =Choices([@AdminLogs].'Employee Contacted')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(AdminLogs.EmployeeContacted,DataCardValue9_1.SearchText)
+                    SearchItems: =Choices(AdminLogs.'Employee Contacted',DataCardValue9_1.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
@@ -367,78 +438,6 @@
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey10_1.Y
-                    ZIndex: =4
-
-            "'Status of Call_DataCard2_1' As typedDataCard.comboBoxEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="StatusofCall"
-                Default: =ThisItem.'Status of Call'
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"StatusofCall")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =DataCardValue11_1.Selected
-                Width: =640
-                WidthFit: =true
-                X: =0
-                Y: =4
-                ZIndex: =1
-
-                DataCardKey11_1 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue11_1 As combobox:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultSelectedItems: =Parent.Default
-                    DisplayFields: =["Value"]
-                    DisplayMode: =Parent.DisplayMode
-                    Height: =70
-                    Items: =Choices([@AdminLogs].StatusofCall)
-                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SearchFields: =["Value"]
-                    SearchItems: =Choices(AdminLogs.StatusofCall,DataCardValue11_1.SearchText)
-                    SelectMultiple: =false
-                    Size: =21
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey11_1.Y + DataCardKey11_1.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage7_1 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =24
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue11_1.Y + DataCardValue11_1.Height
-                    ZIndex: =3
-
-                StarVisible7_1 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey11_1.Height
-                    Size: =21
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey11_1.Y
                     ZIndex: =4
 
             "'Additional Notes_DataCard2_1' As typedDataCard.textualEditCard":

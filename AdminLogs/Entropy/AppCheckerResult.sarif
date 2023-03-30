@@ -404,19 +404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1.EditContainer.EditForm1.'Status of Call_DataCard2_1'.DataCardValue11_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditScreen1.EditContainer.EditForm1.'Status of Call_DataCard2'.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1.EditContainer.EditForm1.'Status of Call_DataCard2_1'.DataCardValue11_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditScreen1.EditContainer.EditForm1.'Status of Call_DataCard2'.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditScreen1",
-                "type": "EditScreen1.EditContainer.EditForm1.'Status of Call_DataCard2_1'.DataCardValue11_1"
+                "type": "EditScreen1.EditContainer.EditForm1.'Status of Call_DataCard2'.DataCardValue2"
               }
             }
           ],
