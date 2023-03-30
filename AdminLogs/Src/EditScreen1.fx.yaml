@@ -4,87 +4,12 @@
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
-        Visible: =false
         Width: =Parent.Width
         ZIndex: =6
 
         Header_3 As Header:
-            LayoutMinHeight: =640
-
-        Header_4 As Header:
             AlignInContainer: =AlignInContainer.Stretch
             LayoutMinHeight: =640
-
-        BrowseNavContainer_1 As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            Fill: =RGBA(56, 96, 178, 1)
-            FillPortions: =0
-            Height: =100
-            LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-            LayoutMinHeight: =112
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            ZIndex: =2
-
-            LblAppName1_3 As label:
-                Fill: =RGBA(58, 58, 58, 0)
-                Height: =88
-                LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =27
-                Text: ="AdminLogs"
-                Width: =Parent.Width - Self.X - IconSortUpDown1_2.Width - IconNewItem1_2.Width - IconRefresh1_2.Width
-                Wrap: =false
-                X: =20
-                ZIndex: =1
-
-            IconRefresh1_2 As icon.Reload:
-                AccessibleLabel: =Self.Tooltip
-                Height: =88
-                Icon: =Icon.Reload
-                OnSelect: =Refresh([@AdminLogs])
-                PaddingBottom: =22
-                PaddingLeft: =22
-                PaddingRight: =22
-                PaddingTop: =22
-                TabIndex: =0
-                Tooltip: ="Refresh list"
-                Width: =88
-                X: =Parent.Width - IconNewItem1_2.Width - IconSortUpDown1_2.Width - Self.Width
-                ZIndex: =2
-
-            IconSortUpDown1_2 As icon.ArrowsUpDown:
-                AccessibleLabel: =Self.Tooltip
-                Height: =88
-                Icon: =Icon.Sort
-                OnSelect: |-
-                    =UpdateContext({SortDescending1: !SortDescending1})
-                PaddingBottom: =26
-                PaddingLeft: =26
-                PaddingRight: =26
-                PaddingTop: =26
-                TabIndex: =0
-                Tooltip: =If(SortDescending1, "Sort list in reverse alphabetical order", "Sort list in alphabetical order")
-                Width: =88
-                X: =Parent.Width - IconNewItem1_2.Width - Self.Width
-                ZIndex: =3
-
-            IconNewItem1_2 As icon.Add:
-                AccessibleLabel: =Self.Tooltip
-                DisplayMode: =If(DataSourceInfo([@AdminLogs], DataSourceInfo.CreatePermission), DisplayMode.Edit, DisplayMode.Disabled)
-                Height: =88
-                Icon: =Icon.Add
-                OnSelect: =NewForm(EditForm1);Navigate(EditScreen1, ScreenTransition.None)
-                PaddingBottom: =24
-                PaddingLeft: =24
-                PaddingRight: =24
-                PaddingTop: =24
-                TabIndex: =0
-                Tooltip: ="Create new item"
-                Width: =88
-                X: =Parent.Width - Self.Width
-                ZIndex: =4
 
         EditNavContainer As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(56, 96, 178, 1)
@@ -137,82 +62,6 @@
                 Width: =88
                 X: =Parent.Width - Self.Width
                 ZIndex: =3
-
-        "BrowseGallery1_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-            AlignInContainer: =AlignInContainer.SetByContainer
-            Height: =Parent.Height - Self.Y
-            Items: =SortByColumns(Filter([@AdminLogs], StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
-            Layout: =Layout.Vertical
-            LayoutMinHeight: =287
-            LayoutMinWidth: =320
-            OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)
-            ShowScrollbar: =false
-            TemplatePadding: =0
-            TemplateSize: =Min(168, Self.Height - 60)
-            Width: =Parent.Width
-            Y: =TextSearchBox1.Y + TextSearchBox1.Height
-            ZIndex: =3
-
-            Title1_2 As label:
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.Title
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =32
-                ZIndex: =1
-
-            Subtitle1_2 As label:
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.'Auto Notes'
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =32
-                ZIndex: =2
-
-            Body1_2 As label:
-                Height: =Self.Size * 4
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.ID
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =32
-                ZIndex: =3
-
-            NextArrow1_2 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="View item details"
-                Width: =60
-                X: =Parent.TemplateWidth - Self.Width - 5
-                ZIndex: =4
-
-            Separator1_2 As rectangle:
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
-                ZIndex: =5
 
         EditForm1 As form:
             DataSource: =[@AdminLogs]
@@ -664,10 +513,6 @@
                     Wrap: =false
                     Y: =DataCardKey12_1.Y
                     ZIndex: =4
-
-        Footer_4 As Footer:
-            LayoutMinHeight: =640
-            ZIndex: =4
 
         Footer_3 As Footer:
             LayoutMinHeight: =640
