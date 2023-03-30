@@ -1,0 +1,39 @@
+Header As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    HeaderFontSize: =100
+    HeaderText: ="display text goes here"
+    Height: =100
+    HomeScreen: =App.ActiveScreen
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HeaderContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        VertContainerUpper As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(56, 96, 178, 1)
+            FillPortions: =0
+            Height: =100
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            HeaderImage As image:
+                AlignInContainer: =AlignInContainer.Start
+                BorderColor: =RGBA(56, 96, 178, 1)
+                BorderThickness: =2
+                Fill: =RGBA(255, 255, 255, 1)
+                Image: ='Metis Background'
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                OnSelect: =Navigate(Header.HomeScreen)
+                Width: =320
+                ZIndex: =1
+

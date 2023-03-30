@@ -1,0 +1,25 @@
+Footer As CanvasComponent:
+    Fill: =RGBA(238, 204, 204, 1)
+    FooterText: ="spot for dynamic info"
+    Height: =80
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        Size: =18
+        Text: |-
+            ="Screen size: " & App.ActiveScreen.Size & " Screen Width: " & App.ActiveScreen.Width & " Screen Height: " & App.ActiveScreen.Height 
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Label1_1 As label:
+        Align: =Align.Center
+        Size: =18
+        Text: =Footer.FooterText
+        Width: =Parent.Width
+        Y: =40
+        ZIndex: =2
+
