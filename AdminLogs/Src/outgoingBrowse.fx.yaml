@@ -1,4 +1,4 @@
-"BrowseScreen1_1 As screen.'phoneBrowseLayout_ver3.0'":
+"outgoingBrowse As screen.'phoneBrowseLayout_ver3.0'":
 
     TextSearchBox1_1 As text:
         Default: =""
@@ -79,7 +79,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =27
-                Text: ="Admin Logs"
+                Text: ="Outgoing Logs"
                 Width: =Parent.Width - Self.X - IconSortUpDown1_2.Width - IconNewItem1_2.Width - IconRefresh1_2.Width
                 Wrap: =false
                 X: =20
@@ -134,7 +134,7 @@
 
         "BrowseGallery1_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
             Height: =Parent.Height - Self.Y
-            Items: =SortByColumns(Filter([@AdminLogs], StartsWith(Title, TextSearchBox1_1.Text)), "Title", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
+            Items: =SortByColumns(Filter([@OutGoingMailLogs], StartsWith(Title, TextSearchBox1_1.Text)), "Title", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
             Layout: =Layout.Vertical
             LayoutMinHeight: =287
             LayoutMinWidth: =320

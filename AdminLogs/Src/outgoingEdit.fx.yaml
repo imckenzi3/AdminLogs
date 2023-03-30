@@ -1,4 +1,4 @@
-"EditScreen1_1 As screen.'phoneDetailEditLayout_ver3.0'":
+"outgoingEdit As screen.'phoneDetailEditLayout_ver3.0'":
 
     EditContainer_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -65,7 +65,7 @@
                 ZIndex: =3
 
         EditForm1_1 As form:
-            DataSource: =[@AdminLogs]
+            DataSource: =[@OutGoingMailLogs]
             Height: =Parent.Height - EditForm1_1.Y
             Item: =BrowseGallery1_1.Selected
             LayoutMinHeight: =250

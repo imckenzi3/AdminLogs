@@ -13,12 +13,16 @@
         "dataSources": {
           "AdminLogs": {
             "tableName": "73874ad9-6bb3-4e53-a08d-46b213299384"
+          },
+          "OutGoingMailLogs": {
+            "tableName": "23f3090c-0342-43af-89d0-7ca1b0cd75c9"
           }
         }
       }
     },
     "dataSources": [
-      "AdminLogs"
+      "AdminLogs",
+      "OutGoingMailLogs"
     ],
     "dependencies": {},
     "dependents": [],

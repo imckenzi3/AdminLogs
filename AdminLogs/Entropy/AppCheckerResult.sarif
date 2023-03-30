@@ -14,6 +14,917 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.CitizenNameCompany_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.CitizenNameCompany_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 27,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Name of Citizen/Company '"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.CitizenNameCompany_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Name of Citizen/Company "
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.PurposeOfCall_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.PurposeOfCall_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 30,
+                  "snippet": {
+                    "text": ".'Purpose of Call'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.PurposeOfCall_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Purpose of Call"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 33,
+                  "snippet": {
+                    "text": ".'Employee Contacted'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Contacted"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 54,
+                  "snippet": {
+                    "text": ".DisplayName"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 85,
+                  "snippet": {
+                    "text": ".'Employee Contacted'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Contacted"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 106,
+                  "snippet": {
+                    "text": ".JobTitle"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 132,
+                  "snippet": {
+                    "text": ".'Employee Contacted'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Contacted"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 153,
+                  "snippet": {
+                    "text": ".Department"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.EmployeeContact_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.Item",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": ".Selected"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataSource"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadTypeExpectedCompatibleWith-PropertyName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 27,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Name of Citizen/Company '"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Name of Citizen/Company "
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Purpose of Call'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Purpose of Call"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Employee Contacted'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Contacted"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 31,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Employee Department/Ministry'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Department/Ministry"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Status of Call'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Status of Call"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Additional Notes'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Additional Notes"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Auto Notes'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Auto Notes"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.Item",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": ".Selected"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataSource"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadTypeExpectedCompatibleWith-PropertyName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Name of Citizen/Company _DataCard1_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Name of Citizen/Company _DataCard1_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 27,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Name of Citizen/Company '"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Name of Citizen/Company _DataCard1_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Name of Citizen/Company "
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Purpose of Call_DataCard1_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Purpose of Call_DataCard1_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Purpose of Call'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Purpose of Call_DataCard1_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Purpose of Call"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Employee Contacted'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Contacted"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Department/Ministry_DataCard1_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Department/Ministry_DataCard1_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 31,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Employee Department/Ministry'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Department/Ministry_DataCard1_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Employee Department/Ministry"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Status of Call'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Status of Call"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Additional Notes_DataCard1_2'.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Additional Notes_DataCard1_2'.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Additional Notes'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Additional Notes_DataCard1_2'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Additional Notes"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Header.HeaderContainer.VertContainerUpper.HeaderImage.AccessibleLabel"
                 }
               ],
@@ -37,7 +948,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -67,7 +978,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -97,7 +1008,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -127,7 +1038,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -157,7 +1068,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -187,7 +1098,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -217,7 +1128,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -247,7 +1158,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -277,7 +1188,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -307,7 +1218,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -337,7 +1248,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -367,7 +1278,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -397,7 +1308,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -427,7 +1338,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -457,7 +1368,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -487,26 +1398,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BrowseScreen1_1.TextSearchBox1_1.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingBrowse.TextSearchBox1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BrowseScreen1_1.TextSearchBox1_1.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingBrowse.TextSearchBox1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BrowseScreen1_1",
-                "type": "BrowseScreen1_1.TextSearchBox1_1"
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.TextSearchBox1_1"
               }
             }
           ],
@@ -517,26 +1428,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BrowseScreen1_1.BrowseContainer_1.BrowseGallery1_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BrowseScreen1_1.BrowseContainer_1.BrowseGallery1_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BrowseScreen1_1",
-                "type": "BrowseScreen1_1.BrowseContainer_1.BrowseGallery1_2"
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2"
               }
             }
           ],
@@ -547,26 +1458,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BrowseScreen1_1.BrowseContainer_1.BrowseGallery1_2.TabIndex"
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BrowseScreen1_1.BrowseContainer_1.BrowseGallery1_2.TabIndex",
+                  "fullyQualifiedName": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BrowseScreen1_1",
-                "type": "BrowseScreen1_1.BrowseContainer_1.BrowseGallery1_2"
+                "module": "outgoingBrowse",
+                "type": "outgoingBrowse.BrowseContainer_1.BrowseGallery1_2"
               }
             }
           ],
@@ -577,26 +1488,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.DataCardValue7_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.DataCardValue7_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.DataCardValue7_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.DataCardValue7_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.DataCardValue7_2"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Name of Citizen/Company _DataCard2_2'.DataCardValue7_2"
               }
             }
           ],
@@ -607,26 +1518,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.DataCardValue8_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.DataCardValue8_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.DataCardValue8_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.DataCardValue8_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.DataCardValue8_2"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Purpose of Call_DataCard2_2'.DataCardValue8_2"
               }
             }
           ],
@@ -637,26 +1548,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.DataCardValue9_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.DataCardValue9_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.DataCardValue9_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.DataCardValue9_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.DataCardValue9_2"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Contacted_DataCard2_2'.DataCardValue9_2"
               }
             }
           ],
@@ -667,26 +1578,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.DataCardValue10_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.DataCardValue10_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.DataCardValue10_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.DataCardValue10_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.DataCardValue10_2"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Employee Department/Ministry_DataCard2_2'.DataCardValue10_2"
               }
             }
           ],
@@ -697,26 +1608,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.DataCardValue2_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.DataCardValue2_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.DataCardValue2_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.DataCardValue2_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.DataCardValue2_2"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Status of Call_DataCard2_1'.DataCardValue2_2"
               }
             }
           ],
@@ -727,26 +1638,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.DataCardValue12_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.DataCardValue12_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.DataCardValue12_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.DataCardValue12_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.DataCardValue12_2"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Additional Notes_DataCard2_2'.DataCardValue12_2"
               }
             }
           ],
@@ -757,26 +1668,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.DataCardValue3_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.DataCardValue3_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.DataCardValue3_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.DataCardValue3_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.DataCardValue3_2"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.'Auto Notes_DataCard1_1'.DataCardValue3_2"
               }
             }
           ],
@@ -787,26 +1698,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.DataCardValue3_3.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.DataCardValue3_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.DataCardValue3_3.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.DataCardValue3_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "DetailScreen1_1",
-                "type": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.DataCardValue3_3"
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Employee Contacted_DataCard1_2'.DataCardValue3_3"
               }
             }
           ],
@@ -817,26 +1728,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.DataCardValue5_2.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.DataCardValue5_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.DataCardValue5_2.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.DataCardValue5_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "DetailScreen1_1",
-                "type": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.DataCardValue5_2"
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Status of Call_DataCard1_2'.DataCardValue5_2"
               }
             }
           ],
@@ -847,26 +1758,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Created By_DataCard1_1'.DataCardValue14_1.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Created By_DataCard1_1'.DataCardValue14_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Created By_DataCard1_1'.DataCardValue14_1.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Created By_DataCard1_1'.DataCardValue14_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "DetailScreen1_1",
-                "type": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Created By_DataCard1_1'.DataCardValue14_1"
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Created By_DataCard1_1'.DataCardValue14_1"
               }
             }
           ],
@@ -877,26 +1788,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Modified By_DataCard1_1'.DataCardValue16_1.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Modified By_DataCard1_1'.DataCardValue16_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Modified By_DataCard1_1'.DataCardValue16_1.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Modified By_DataCard1_1'.DataCardValue16_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "DetailScreen1_1",
-                "type": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.'Modified By_DataCard1_1'.DataCardValue16_1"
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2.'Modified By_DataCard1_1'.DataCardValue16_1"
               }
             }
           ],
@@ -907,7 +1818,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -937,7 +1848,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -967,7 +1878,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -997,26 +1908,26 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.Item"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen1_1.EditContainer_1.EditForm1_1.Item",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
-                "module": "EditScreen1_1",
-                "type": "EditScreen1_1.EditContainer_1.EditForm1_1"
+                "module": "outgoingEdit",
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1"
               }
             }
           ],
@@ -1027,26 +1938,26 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailNavContainer_1.IconDelete1_2.DisplayMode"
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailNavContainer_1.IconDelete1_2.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailNavContainer_1.IconDelete1_2.DisplayMode",
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailNavContainer_1.IconDelete1_2.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
-                "module": "DetailScreen1_1",
-                "type": "DetailScreen1_1.DetailContainer_1.DetailNavContainer_1.IconDelete1_2"
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailNavContainer_1.IconDelete1_2"
               }
             }
           ],
@@ -1057,26 +1968,26 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.Item"
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "DetailScreen1_1.DetailContainer_1.DetailForm1_2.Item",
+                  "fullyQualifiedName": "outgoingDetail.DetailContainer_1.DetailForm1_2.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
-                "module": "DetailScreen1_1",
-                "type": "DetailScreen1_1.DetailContainer_1.DetailForm1_2"
+                "module": "outgoingDetail",
+                "type": "outgoingDetail.DetailContainer_1.DetailForm1_2"
               }
             }
           ],
@@ -1087,7 +1998,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 2
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -1095,6 +2006,51 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadTypeExpectedCompatibleWith-PropertyName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid formula. Expected a value compatible with '{0}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {
