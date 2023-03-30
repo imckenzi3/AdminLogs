@@ -6599,7 +6599,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "HomeScreen",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "App.ActiveScreen",
+          "InvariantPropertyName": "HomeScreen",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HeaderFontSize"
       ],
       "DynamicProperties": [
@@ -6673,7 +6680,7 @@
         {
           "Category": "Data",
           "PropertyName": "HomeScreen",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
