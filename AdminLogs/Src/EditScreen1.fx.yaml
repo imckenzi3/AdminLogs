@@ -4,6 +4,7 @@
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        Visible: =false
         Width: =Parent.Width
         ZIndex: =6
 
