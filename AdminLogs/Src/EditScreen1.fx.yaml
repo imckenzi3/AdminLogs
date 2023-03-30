@@ -110,7 +110,7 @@
                             DateTimeFormat.ShortDateTime
                         ) & ": Regarding " & DataCardValue8_1 & 
                         
-                        " | Status of Call: " & DataCardValue2.Selected.Value & "| Directed to: " & DataCardValue9_1.Selected.DisplayName & " - " & DataCardValue9_1.Selected.Department
+                        " | Status of Call: " & DataCardValue2.Selected.Value & " | Directed to: " & DataCardValue9_1.Selected.DisplayName & " - " & DataCardValue9_1.Selected.Department
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
@@ -460,6 +460,7 @@
                 Required: =true
                 Update: =DataCardValue2.Selected
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =4
                 ZIndex: =1
