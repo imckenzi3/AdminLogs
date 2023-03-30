@@ -515,6 +515,7 @@
                     ZIndex: =4
 
         Footer_3 As Footer:
+            AlignInContainer: =AlignInContainer.Center
             LayoutMinHeight: =640
             ZIndex: =5
 
