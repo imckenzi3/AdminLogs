@@ -86,7 +86,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%AdditionalNotes.ID%",
       "Name": "Additional Notes_DataCard2_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -259,7 +259,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Auto Notes_DataCard1",
-      "ParentIndex": 0,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1230,7 +1230,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey3",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3375,7 +3375,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue3",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5281,7 +5281,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%EmployeeContacted.ID%",
       "Name": "Employee Contacted_DataCard2_1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5449,7 +5449,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%EmployeeDepartment_x002f_Ministr.ID%",
       "Name": "Employee Department/Ministry_DataCard2_1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5886,7 +5886,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage3",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8615,7 +8615,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%NameofCitizen_x002f_Company.ID%",
       "Name": "Name of Citizen/Company _DataCard2_1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8788,7 +8788,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%PurposeofCall.ID%",
       "Name": "Purpose of Call_DataCard2_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9225,7 +9225,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible3",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10920,7 +10920,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Status of Call_DataCard2",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

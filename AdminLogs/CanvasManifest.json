@@ -119,6 +119,6 @@
   "ScreenOrder": [
     "BrowseScreen1",
     "EditScreen1",
-    "DetailScreen1"
+    "BrowseScreen1_2"
   ]
 }
