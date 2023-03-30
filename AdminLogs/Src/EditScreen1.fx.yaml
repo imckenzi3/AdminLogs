@@ -82,7 +82,7 @@
                 DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"StatusofCall")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                Required: =false
+                Required: =true
                 Update: =DataCardValue2.Selected
                 Width: =640
                 X: =0
@@ -106,10 +106,10 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].StatusofCall)
+                    Items: =Choices([@AdminLogs].'Status of Call')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(AdminLogs.StatusofCall,DataCardValue2.SearchText)
+                    SearchItems: =Choices(AdminLogs.'Status of Call',DataCardValue2.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Tooltip: =Parent.DisplayName
@@ -154,7 +154,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 MaxLength: =DataSourceInfo([@AdminLogs], DataSourceInfo.MaxLength, "NameofCitizen_x002f_Company")
-                Required: =false
+                Required: =true
                 Update: =DataCardValue7_1.Text
                 Width: =640
                 WidthFit: =true
@@ -228,7 +228,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 MaxLength: =DataSourceInfo([@AdminLogs], DataSourceInfo.MaxLength, "PurposeofCall")
-                Required: =false
+                Required: =true
                 Update: =DataCardValue8_1.Text
                 Width: =640
                 WidthFit: =true
@@ -301,7 +301,7 @@
                 DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"EmployeeContacted")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                Required: =false
+                Required: =true
                 Update: =DataCardValue9_1.Selected
                 Width: =640
                 WidthFit: =true
