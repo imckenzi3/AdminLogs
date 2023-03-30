@@ -1,0 +1,49 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-03-21T17:09:42.5140000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "AdditionalNotes": "Additional Notes",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "AutoNotes": "Auto Notes",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "EmployeeContacted": "Employee Contacted",
+      "EmployeeContacted#Claims": "Employee Contacted Claims",
+      "EmployeeDepartment_x002f_Ministr": "Employee Department/Ministry",
+      "ID": "ID",
+      "Modified": "Modified",
+      "NameofCitizen_x002f_Company": "Name of Citizen/Company ",
+      "PurposeofCall": "Purpose of Call",
+      "StatusofCall": "Status of Call",
+      "StatusofCall#Id": "Status of Call Id",
+      "Title": "Title"
+    },
+    "DatasetName": "https://metisnationbc-my.sharepoint.com/personal/imckenzie_mnbc_ca",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "AdminLogs",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
