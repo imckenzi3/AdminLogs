@@ -41,13 +41,17 @@
           },
           "OutGoingMailLogs": {
             "tableName": "23f3090c-0342-43af-89d0-7ca1b0cd75c9"
+          },
+          "Walk-InLog": {
+            "tableName": "a8589f69-3eab-4344-8e89-ded9e9fc2a2b"
           }
         }
       }
     },
     "dataSources": [
       "AdminLogs",
-      "OutGoingMailLogs"
+      "OutGoingMailLogs",
+      "Walk-InLog"
     ],
     "dependencies": {},
     "dependents": [],

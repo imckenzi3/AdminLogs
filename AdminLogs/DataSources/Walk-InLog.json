@@ -1,0 +1,44 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-03-21T17:09:42.5140000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "AdditionalNotes": "Additional Notes",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "CitizensName": "Citizens Name",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "ID": "ID",
+      "Modified": "Modified",
+      "Purpose": "Purpose",
+      "ReasonforVisit": "Reason for Visit",
+      "Title": "Title"
+    },
+    "DatasetName": "https://metisnationbc-my.sharepoint.com/personal/imckenzie_mnbc_ca",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Walk-InLog",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

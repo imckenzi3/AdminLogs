@@ -1,0 +1,466 @@
+"WalkDetail As screen.'phoneDetailViewLayout_ver3.0'":
+
+    DetailContainer_3 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =7
+
+        Header_12 As Header:
+            AlignInContainer: =AlignInContainer.Stretch
+            HomeScreen: =BrowseScreen1
+            LayoutMinHeight: =640
+
+        DetailNavContainer_3 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(56, 96, 178, 1)
+            FillPortions: =0
+            Height: =100
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            IconBackarrow1_4 As icon.ChevronLeft:
+                AccessibleLabel: =Self.Tooltip
+                Height: =88
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Navigate(outgoingBrowse, ScreenTransition.None)
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                TabIndex: =0
+                Tooltip: ="Back to list"
+                Width: =88
+                ZIndex: =1
+
+            LblAppName1_8 As label:
+                Fill: =RGBA(58, 58, 58, 0)
+                Height: =88
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =27
+                Text: ="Details"
+                Width: =Parent.Width - Self.X - IconBackarrow1_4.Width - IconEdit1_4.Width - IconDelete1_4.Width
+                Wrap: =false
+                X: =20
+                ZIndex: =2
+
+            IconDelete1_4 As icon.Trash:
+                AccessibleLabel: =Self.Tooltip
+                DisplayMode: =If(!IsBlank(BrowseGallery1_1.Selected) && DataSourceInfo([@AdminLogs], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
+                Height: =88
+                Icon: =Icon.Trash
+                OnSelect: =Remove([@OutGoingMailLogs], BrowseGallery1_2.Selected); If (IsEmpty(Errors([@OutGoingMailLogs], BrowseGallery1_2.Selected)), Back())
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                TabIndex: =0
+                Tooltip: ="Delete this item"
+                Width: =88
+                X: =Parent.Width - IconEdit1_4.Width - Self.Width
+                ZIndex: =3
+
+            IconEdit1_4 As icon.Edit:
+                AccessibleLabel: =Self.Tooltip
+                DisplayMode: =If(DataSourceInfo([@AdminLogs], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
+                Height: =88
+                Icon: =Icon.Edit
+                OnSelect: =EditForm(EditForm1);Navigate(outgoingEdit, ScreenTransition.None)
+                PaddingBottom: =24
+                PaddingLeft: =24
+                PaddingRight: =24
+                PaddingTop: =24
+                TabIndex: =0
+                Tooltip: ="Edit this item"
+                Width: =88
+                X: =Parent.Width - Self.Width
+                ZIndex: =4
+
+        DetailForm1_4 As formViewer:
+            DataSource: ='Walk-InLog'
+            Height: =Parent.Height - DetailForm1_4.Y
+            Item: =BrowseGallery1_4.Selected
+            LayoutMinHeight: =250
+            LayoutMinWidth: =320
+            Width: =Parent.Width
+            ZIndex: =3
+
+            Created_DataCard4 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Created"
+                Default: =ThisItem.Created
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"Created")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey70 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue70 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey70.Y + DataCardKey70.Height + 5
+                    ZIndex: =2
+
+            "'Created By_DataCard4' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Author"
+                Default: =ThisItem.'Created By'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"Author")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue71.Selected
+                Width: =640
+                X: =0
+                Y: =5
+                ZIndex: =1
+
+                DataCardKey71 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue71 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@'Walk-InLog'].Author)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices('Walk-InLog'.Author,DataCardValue71.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey71.Y + DataCardKey71.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage46 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue71.Y + DataCardValue71.Height
+                    ZIndex: =3
+
+                StarVisible46 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey71.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey71.Y
+                    ZIndex: =4
+
+            Modified_DataCard4 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Modified"
+                Default: =ThisItem.Modified
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"Modified")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =6
+                ZIndex: =1
+
+                DataCardKey72 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue72 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey72.Y + DataCardKey72.Height + 5
+                    ZIndex: =2
+
+            "'Modified By_DataCard4' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Editor"
+                Default: =ThisItem.'Modified By'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"Editor")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue73.Selected
+                Width: =640
+                X: =0
+                Y: =7
+                ZIndex: =1
+
+                DataCardKey73 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue73 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@'Walk-InLog'].Editor)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices('Walk-InLog'.Editor,DataCardValue73.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey73.Y + DataCardKey73.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage47 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue73.Y + DataCardValue73.Height
+                    ZIndex: =3
+
+                StarVisible47 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey73.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey73.Y
+                    ZIndex: =4
+
+            Purpose_DataCard2 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Purpose"
+                Default: =ThisItem.Purpose
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"Purpose")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =0
+                ZIndex: =4
+
+                DataCardKey66 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue66 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                    ZIndex: =2
+
+            "'Citizens Name_DataCard2' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="CitizensName"
+                Default: =ThisItem.'Citizens Name'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"CitizensName")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =1
+                ZIndex: =4
+
+                DataCardKey67 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue67 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey67.Y + DataCardKey67.Height + 5
+                    ZIndex: =2
+
+            "'Additional Notes_DataCard2' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="AdditionalNotes"
+                Default: =ThisItem.'Additional Notes'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"AdditionalNotes")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =3
+                ZIndex: =4
+
+                DataCardKey68 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue68 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey68.Y + DataCardKey68.Height + 5
+                    ZIndex: =2
+
+            "'Reason for Visit_DataCard2' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ReasonforVisit"
+                Default: =ThisItem.'Reason for Visit'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"ReasonforVisit")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =2
+                ZIndex: =4
+
+                DataCardKey69 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue69 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                    ZIndex: =2
+
+        Footer_12 As Footer:
+            LayoutMinHeight: =640
+            ZIndex: =4
+
