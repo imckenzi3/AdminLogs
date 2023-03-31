@@ -12,7 +12,7 @@
             LayoutMinHeight: =640
 
         BrowseNavContainer_5 As groupContainer.horizontalAutoLayoutContainer:
-            Fill: =RGBA(136, 160, 209, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =100
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
