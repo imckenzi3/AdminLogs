@@ -117,8 +117,21 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Main",
     "BrowseScreen1",
     "EditScreen1",
-    "DetailScreen1"
+    "DetailScreen1",
+    "receivingBrowse",
+    "receivingEdit",
+    "receivingDetail",
+    "WalkBrowse",
+    "WalkEdit",
+    "WalkDetail",
+    "outgoingBrowse",
+    "outgoingEdit",
+    "outgoingDetail",
+    "pitneyBrowse",
+    "pitneyEdit",
+    "pitneyDetail"
   ]
 }
