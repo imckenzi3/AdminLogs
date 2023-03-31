@@ -121,7 +121,7 @@
                 DisplayMode: =If(DataSourceInfo([@AdminLogs], DataSourceInfo.CreatePermission), DisplayMode.Edit, DisplayMode.Disabled)
                 Height: =88
                 Icon: =Icon.Add
-                OnSelect: =NewForm(EditForm1_1);Navigate(outgoingEdit, ScreenTransition.None)
+                OnSelect: =NewForm(EditForm1_4);Navigate(pitneyEdit, ScreenTransition.None)
                 PaddingBottom: =24
                 PaddingLeft: =24
                 PaddingRight: =24
