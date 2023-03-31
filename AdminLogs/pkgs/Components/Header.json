@@ -829,7 +829,7 @@
       "HomeScreen",
       "HeaderFontSize"
     ],
-    "LastModifiedTimestamp": "638158121919853320",
+    "LastModifiedTimestamp": "638158741021178339",
     "Name": "Header",
     "Rules": [
       {
@@ -934,7 +934,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638158121919853320",
+  "LastModifiedTimestamp": "638158741021178339",
   "Name": "0bdd8fec78394b07b1492cb94efd0931",
   "OverridableProperties": {},
   "SourceLibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",

@@ -10,12 +10,16 @@
         Header_2 As Header:
             AlignInContainer: =AlignInContainer.Stretch
             HomeScreen: =BrowseScreen1
+            LayoutMinHeight: =640
 
         DetailNavContainer As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(56, 96, 178, 1)
+            FillPortions: =0
             Height: =100
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
@@ -36,6 +40,8 @@
             LblAppName1_2 As label:
                 Fill: =RGBA(58, 58, 58, 0)
                 Height: =88
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
                 Size: =27
                 Text: ="Details"
                 Width: =Parent.Width - Self.X - IconBackarrow1_1.Width - IconEdit1_1.Width - IconDelete1_1.Width
@@ -76,9 +82,12 @@
                 ZIndex: =4
 
         DetailForm1_1 As formViewer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DataSource: =[@AdminLogs]
             Height: =Parent.Height - DetailForm1_1.Y
             Item: =BrowseGallery1_1.Selected
+            LayoutMinHeight: =250
+            LayoutMinWidth: =320
             Width: =Parent.Width
             ZIndex: =3
 
@@ -600,5 +609,6 @@
                     ZIndex: =4
 
         Footer_2 As Footer:
+            LayoutMinHeight: =640
             ZIndex: =4
 
