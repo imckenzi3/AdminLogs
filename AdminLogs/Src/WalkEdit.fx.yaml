@@ -87,7 +87,7 @@
                 Update: =DataCardValue62.Text
                 Width: =640
                 X: =0
-                Y: =0
+                Y: =1
                 ZIndex: =4
 
                 DataCardKey62 As label:
@@ -160,7 +160,7 @@
                 Update: =DataCardValue63.Text
                 Width: =640
                 X: =0
-                Y: =1
+                Y: =0
                 ZIndex: =4
 
                 DataCardKey63 As label:
