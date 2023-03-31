@@ -605,7 +605,7 @@
 
                 DataCardValue33 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =DataCardValue49 * DataCardValue32
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number

@@ -192,7 +192,7 @@
                 "Name": "HeaderImage",
                 "Parent": "VertContainerUpper",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 335,
+                "PublishOrderIndex": 336,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -501,7 +501,7 @@
             "Name": "VertContainerUpper",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 334,
+            "PublishOrderIndex": 335,
             "Rules": [
               {
                 "Category": "Design",
@@ -676,7 +676,7 @@
         "Name": "HeaderContainer",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 333,
+        "PublishOrderIndex": 334,
         "Rules": [
           {
             "Category": "Design",
