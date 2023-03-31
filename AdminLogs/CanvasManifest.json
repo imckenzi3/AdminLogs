@@ -123,11 +123,11 @@
     "receivingBrowse",
     "receivingEdit",
     "receivingDetail",
-    "outgoingBrowse",
-    "outgoingEdit",
-    "outgoingDetail",
     "WalkBrowse",
     "WalkEdit",
-    "WalkDetail"
+    "WalkDetail",
+    "outgoingBrowse",
+    "outgoingEdit",
+    "outgoingDetail"
   ]
 }
