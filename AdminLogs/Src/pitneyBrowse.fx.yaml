@@ -43,6 +43,7 @@
 
         Header_13 As Header:
             AlignInContainer: =AlignInContainer.Stretch
+            HomeScreen: =Main
             LayoutMinHeight: =640
 
         BrowseNavContainer_4 As groupContainer.horizontalAutoLayoutContainer:
@@ -89,7 +90,7 @@
                 AccessibleLabel: =Self.Tooltip
                 Height: =88
                 Icon: =Icon.Reload
-                OnSelect: =Refresh([@AdminLogs])
+                OnSelect: =Refresh([@PitneyBowesLog])
                 PaddingBottom: =22
                 PaddingLeft: =22
                 PaddingRight: =22
@@ -138,7 +139,7 @@
             Layout: =Layout.Vertical
             LayoutMinHeight: =287
             LayoutMinWidth: =320
-            OnSelect: =Navigate(outgoingDetail, ScreenTransition.None)
+            OnSelect: =Navigate(pitneyDetail, ScreenTransition.None)
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =Min(168, Self.Height - 60)

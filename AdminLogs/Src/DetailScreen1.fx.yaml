@@ -9,7 +9,7 @@
 
         Header_2 As Header:
             AlignInContainer: =AlignInContainer.Stretch
-            HomeScreen: =BrowseScreen1
+            HomeScreen: =Main
             LayoutMinHeight: =640
 
         DetailNavContainer As groupContainer.horizontalAutoLayoutContainer:

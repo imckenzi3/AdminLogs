@@ -9,7 +9,7 @@
 
         Header_12 As Header:
             AlignInContainer: =AlignInContainer.Stretch
-            HomeScreen: =BrowseScreen1
+            HomeScreen: =Main
             LayoutMinHeight: =640
 
         DetailNavContainer_3 As groupContainer.horizontalAutoLayoutContainer:
@@ -54,7 +54,7 @@
                 DisplayMode: =If(!IsBlank(BrowseGallery1_1.Selected) && DataSourceInfo([@AdminLogs], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
                 Height: =88
                 Icon: =Icon.Trash
-                OnSelect: =Remove([@OutGoingMailLogs], BrowseGallery1_2.Selected); If (IsEmpty(Errors([@OutGoingMailLogs], BrowseGallery1_2.Selected)), Back())
+                OnSelect: =Remove([@'Walk-InLog'], BrowseGallery1_4.Selected); If (IsEmpty(Errors([@'Walk-InLog'], BrowseGallery1_4.Selected)), Back())
                 PaddingBottom: =24
                 PaddingLeft: =24
                 PaddingRight: =24

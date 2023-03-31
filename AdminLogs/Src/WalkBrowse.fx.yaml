@@ -43,6 +43,7 @@
 
         Header_10 As Header:
             AlignInContainer: =AlignInContainer.Stretch
+            HomeScreen: =Main
             LayoutMinHeight: =640
 
         BrowseNavContainer_3 As groupContainer.horizontalAutoLayoutContainer:
@@ -89,7 +90,7 @@
                 AccessibleLabel: =Self.Tooltip
                 Height: =88
                 Icon: =Icon.Reload
-                OnSelect: =Refresh([@AdminLogs])
+                OnSelect: =Refresh([@'Walk-InLog'])
                 PaddingBottom: =22
                 PaddingLeft: =22
                 PaddingRight: =22
