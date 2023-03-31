@@ -1,4 +1,29 @@
 {
+  "6daf261a-fe4c-431d-9903-e25d4a22e867": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://metisnationbc-my.sharepoint.com/personal/imckenzie_mnbc_ca": {
+        "dataSources": {
+          "ReceivingMailLogs": {
+            "tableName": "93d72821-b70e-4514-a6e5-37ccb1a6b201"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "ReceivingMailLogs"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6daf261a-fe4c-431d-9903-e25d4a22e867"
+  },
   "b679bdb3-5ae6-471b-9e4b-d6502a3966e6": {
     "connectionParameters": {
       "sku": "Enterprise"

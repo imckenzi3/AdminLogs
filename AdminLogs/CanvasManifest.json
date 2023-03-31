@@ -120,6 +120,9 @@
     "BrowseScreen1",
     "EditScreen1",
     "DetailScreen1",
+    "receivingBrowse",
+    "receivingEdit",
+    "receivingDetail",
     "outgoingBrowse",
     "outgoingEdit",
     "outgoingDetail"
