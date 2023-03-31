@@ -308,44 +308,6 @@
                     Y: =DataCardKey73.Y
                     ZIndex: =4
 
-            Purpose_DataCard2 As typedDataCard.textualViewCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="Purpose"
-                Default: =ThisItem.Purpose
-                DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"Purpose")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =40
-                Required: =false
-                Width: =640
-                X: =0
-                Y: =1
-                ZIndex: =4
-
-                DataCardKey66 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue66 As label:
-                    AutoHeight: =true
-                    DisplayMode: =Parent.DisplayMode
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =21
-                    Text: =Parent.Default
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey66.Y + DataCardKey66.Height + 5
-                    ZIndex: =2
-
             "'Citizens Name_DataCard2' As typedDataCard.textualViewCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="CitizensName"
@@ -420,6 +382,44 @@
                     Width: =Parent.Width - 60
                     X: =30
                     Y: =DataCardKey68.Y + DataCardKey68.Height + 5
+                    ZIndex: =2
+
+            Purpose_DataCard2 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Purpose"
+                Default: =ThisItem.Purpose
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Walk-InLog'],DataSourceInfo.DisplayName,"Purpose")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =1
+                ZIndex: =4
+
+                DataCardKey66 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue66 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey66.Y + DataCardKey66.Height + 5
                     ZIndex: =2
 
         Footer_12 As Footer:

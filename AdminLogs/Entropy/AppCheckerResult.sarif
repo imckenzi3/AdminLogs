@@ -1484,6 +1484,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "pitneyBrowse.TextSearchBox1_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyBrowse.TextSearchBox1_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "pitneyBrowse",
+                "type": "pitneyBrowse.TextSearchBox1_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "WalkEdit.EditContainer_3.EditForm1_3.'Additional Notes_DataCard1'.DataCardValue64.AccessibleLabel"
                 }
               ],
@@ -1617,6 +1647,186 @@
                 "member": "AccessibleLabel",
                 "module": "WalkDetail",
                 "type": "WalkDetail.DetailContainer_3.DetailForm1_4.'Created By_DataCard4'.DataCardValue71"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyBrowse.BrowseContainer_4.BrowseGallery1_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyBrowse.BrowseContainer_4.BrowseGallery1_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "pitneyBrowse",
+                "type": "pitneyBrowse.BrowseContainer_4.BrowseGallery1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyBrowse.BrowseContainer_4.BrowseGallery1_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyBrowse.BrowseContainer_4.BrowseGallery1_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "pitneyBrowse",
+                "type": "pitneyBrowse.BrowseContainer_4.BrowseGallery1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Additional Funds Available_DataCard1'.DataCardValue77.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Additional Funds Available_DataCard1'.DataCardValue77.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "pitneyEdit",
+                "type": "pitneyEdit.EditContainer_4.EditForm1_4.'Additional Funds Available_DataCard1'.DataCardValue77"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Funds Available On Meter_DataCard1'.DataCardValue76.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Funds Available On Meter_DataCard1'.DataCardValue76.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "pitneyEdit",
+                "type": "pitneyEdit.EditContainer_4.EditForm1_4.'Funds Available On Meter_DataCard1'.DataCardValue76"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Refill Amount_DataCard1'.DataCardValue75.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Refill Amount_DataCard1'.DataCardValue75.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "pitneyEdit",
+                "type": "pitneyEdit.EditContainer_4.EditForm1_4.'Refill Amount_DataCard1'.DataCardValue75"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Meter Number_DataCard1'.DataCardValue74.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.'Meter Number_DataCard1'.DataCardValue74.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "pitneyEdit",
+                "type": "pitneyEdit.EditContainer_4.EditForm1_4.'Meter Number_DataCard1'.DataCardValue74"
               }
             }
           ],
@@ -1934,6 +2144,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyEdit.EditContainer_4.EditForm1_4.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "pitneyEdit",
+                "type": "pitneyEdit.EditContainer_4.EditForm1_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "WalkDetail.DetailContainer_3.DetailNavContainer_3.IconDelete1_4.DisplayMode"
                 }
               ],
@@ -1977,6 +2217,66 @@
                 "member": "Item",
                 "module": "WalkDetail",
                 "type": "WalkDetail.DetailContainer_3.DetailForm1_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyDetail.DetailContainer_4.DetailForm1_5.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyDetail.DetailContainer_4.DetailForm1_5.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "pitneyDetail",
+                "type": "pitneyDetail.DetailContainer_4.DetailForm1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "pitneyDetail.DetailContainer_4.DetailNavContainer_4.IconDelete1_5.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "pitneyDetail.DetailContainer_4.DetailNavContainer_4.IconDelete1_5.DisplayMode",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "pitneyDetail",
+                "type": "pitneyDetail.DetailContainer_4.DetailNavContainer_4.IconDelete1_5"
               }
             }
           ],

@@ -128,6 +128,9 @@
     "WalkDetail",
     "outgoingBrowse",
     "outgoingEdit",
-    "outgoingDetail"
+    "outgoingDetail",
+    "pitneyBrowse",
+    "pitneyEdit",
+    "pitneyDetail"
   ]
 }

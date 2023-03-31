@@ -42,6 +42,9 @@
           "OutGoingMailLogs": {
             "tableName": "23f3090c-0342-43af-89d0-7ca1b0cd75c9"
           },
+          "PitneyBowesLog": {
+            "tableName": "a5ce5f94-90d0-478e-925b-0aaddf167d38"
+          },
           "Walk-InLog": {
             "tableName": "a8589f69-3eab-4344-8e89-ded9e9fc2a2b"
           }
@@ -51,7 +54,8 @@
     "dataSources": [
       "AdminLogs",
       "OutGoingMailLogs",
-      "Walk-InLog"
+      "Walk-InLog",
+      "PitneyBowesLog"
     ],
     "dependencies": {},
     "dependents": [],

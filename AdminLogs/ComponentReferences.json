@@ -1,7 +1,7 @@
 [
   {
     "HasLibraryLogicalName": true,
-    "InstanceCount": 12,
+    "InstanceCount": 15,
     "LibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
     "LibraryLogicalName": "crf1c_imbasiclayout_52933",
     "LibraryVersion": "2023-03-29T19:57:20Z",
@@ -11,7 +11,7 @@
   },
   {
     "HasLibraryLogicalName": true,
-    "InstanceCount": 12,
+    "InstanceCount": 15,
     "LibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
     "LibraryLogicalName": "crf1c_imbasiclayout_52933",
     "LibraryVersion": "2023-03-29T19:57:20Z",
