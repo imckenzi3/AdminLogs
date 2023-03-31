@@ -70,7 +70,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Created By_DataCard2",
-      "ParentIndex": 1,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -209,7 +209,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Created_DataCard2",
-      "ParentIndex": 0,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2809,7 +2809,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey24",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3357,7 +3357,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey26",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6216,7 +6216,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue24",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6842,7 +6842,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue26",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7159,7 +7159,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Delivered_DataCard2",
-      "ParentIndex": 11,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8385,7 +8385,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage15",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8666,7 +8666,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage16",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9082,7 +9082,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "From Location_DataCard2",
-      "ParentIndex": 9,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9229,7 +9229,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "From Name or Company_DataCard2",
-      "ParentIndex": 8,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10551,7 +10551,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Modified By_DataCard2",
-      "ParentIndex": 3,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10690,7 +10690,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Modified_DataCard2",
-      "ParentIndex": 2,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10832,7 +10832,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Package Contents_DataCard2",
-      "ParentIndex": 10,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10987,7 +10987,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Parcel Type_DataCard2",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11768,7 +11768,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible15",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12049,7 +12049,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible16",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12339,7 +12339,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "To Employee_DataCard2",
-      "ParentIndex": 6,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12491,7 +12491,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "To Ministry_DataCard2",
-      "ParentIndex": 7,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12638,7 +12638,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Total Parcels Recieved_DataCard2",
-      "ParentIndex": 5,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
