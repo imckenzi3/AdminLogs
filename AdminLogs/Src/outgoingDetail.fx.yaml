@@ -93,7 +93,7 @@
             Ministry_DataCard2 As typedDataCard.comboBoxViewCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Ministry"
-                Default: =ThisItem.Ministry
+                Default: =ThisItem.'Requested By Ministry'
                 DisplayMode: =DisplayMode.View
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Ministry")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -122,10 +122,10 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@OutGoingMailLogs].Ministry)
+                    Items: =Choices([@OutGoingMailLogs].'Requested By Ministry')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(OutGoingMailLogs.Ministry,DataCardValue47.SearchText)
+                    SearchItems: =Choices(OutGoingMailLogs.'Requested By Ministry',DataCardValue47.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Width: =Parent.Width - 60
