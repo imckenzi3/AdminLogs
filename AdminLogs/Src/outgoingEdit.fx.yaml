@@ -102,9 +102,9 @@
 
                 DataCardValue45 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =1.30
                     DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =DisplayMode.Disabled
                     Format: =TextFormat.Number
                     Height: =70
                     PaddingLeft: =5
@@ -246,9 +246,9 @@
 
                 DataCardValue28 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =92
                     DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =DisplayMode.Disabled
                     Format: =TextFormat.Number
                     Height: =70
                     PaddingLeft: =5
