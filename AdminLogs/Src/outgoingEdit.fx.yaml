@@ -509,15 +509,15 @@
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="TotalPostageCostOther"
                 Default: =ThisItem.TotalPostageCostOther
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =DisplayMode.Disabled
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"TotalPostageCostOther")
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
+                Height: =143
                 Required: =false
                 Update: =Value(DataCardValue58.Text)
                 Width: =640
                 X: =0
-                Y: =6
+                Y: =7
                 ZIndex: =4
 
                 DataCardKey58 As label:
@@ -533,7 +533,7 @@
 
                 DataCardValue58 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =DataCardValue60 * DataCardValue57
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
@@ -589,7 +589,7 @@
                 Update: =Value(DataCardValue60.Text)
                 Width: =640
                 X: =0
-                Y: =7
+                Y: =6
                 ZIndex: =4
 
                 DataCardKey60 As label:
