@@ -90,7 +90,7 @@
                 AccessibleLabel: =Self.Tooltip
                 Height: =88
                 Icon: =Icon.Reload
-                OnSelect: =Refresh([@AdminLogs])
+                OnSelect: =Refresh([@PitneyBowesLog])
                 PaddingBottom: =22
                 PaddingLeft: =22
                 PaddingRight: =22
