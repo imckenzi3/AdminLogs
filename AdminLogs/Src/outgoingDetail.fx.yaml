@@ -90,44 +90,6 @@
             Width: =Parent.Width
             ZIndex: =3
 
-            "'Postage Cost Other_DataCard2' As typedDataCard.textualViewCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="PostageCostOther"
-                Default: =ThisItem.'Postage Cost Other'
-                DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"PostageCostOther")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =40
-                Required: =false
-                Width: =640
-                X: =0
-                Y: =4
-                ZIndex: =1
-
-                DataCardKey50 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue50 As label:
-                    AutoHeight: =true
-                    DisplayMode: =Parent.DisplayMode
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =21
-                    Text: =Parent.Default
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey50.Y + DataCardKey50.Height + 5
-                    ZIndex: =2
-
             Ministry_DataCard2 As typedDataCard.comboBoxViewCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Ministry"
@@ -197,6 +159,44 @@
                     Wrap: =false
                     Y: =DataCardKey47.Y
                     ZIndex: =4
+
+            "'Postage Cost Other_DataCard2' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="PostageCostOther"
+                Default: =ThisItem.'Postage Cost Other'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"PostageCostOther")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey50 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue50 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey50.Y + DataCardKey50.Height + 5
+                    ZIndex: =2
 
             Created_DataCard3 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
