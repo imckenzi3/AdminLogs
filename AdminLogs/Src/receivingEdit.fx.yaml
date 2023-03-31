@@ -536,7 +536,7 @@
                 MaxLength: =DataSourceInfo([@ReceivingMailLogs], DataSourceInfo.MaxLength, "PackageContents")
                 Required: =false
                 Update: =DataCardValue9.Text
-                Visible: =true
+                Visible: =If(DataCardValue1.Selected.Value = "Letter", false, true)
                 Width: =640
                 WidthFit: =true
                 X: =0
