@@ -145,7 +145,7 @@
                     Y: =DataCardKey46.Y
                     ZIndex: =4
 
-            TotalPostageCost130_DataCard3 As typedDataCard.numberEditCard:
+            TotalPostageCost130_DataCard4 As typedDataCard.numberEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="TotalPostageCost130"
                 Default: =ThisItem.TotalPostageCost130
@@ -154,13 +154,13 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =Value(DataCardValue45.Text)
+                Update: =Value(DataCardValue48.Text)
                 Width: =640
                 X: =0
                 Y: =4
                 ZIndex: =1
 
-                DataCardKey45 As label:
+                DataCardKey48 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -171,9 +171,9 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue45 As text:
+                DataCardValue48 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =1.30
+                    Default: =Parent.Default
                     DelayOutput: =true
                     DisplayMode: =DisplayMode.Disabled
                     Format: =TextFormat.Number
@@ -187,10 +187,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey45.Y + DataCardKey45.Height + 5
+                    Y: =DataCardKey48.Y + DataCardKey48.Height + 5
                     ZIndex: =2
 
-                ErrorMessage26 As label:
+                ErrorMessage29 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -203,18 +203,18 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue45.Y + DataCardValue45.Height
+                    Y: =DataCardValue48.Y + DataCardValue48.Height
                     ZIndex: =3
 
-                StarVisible26 As label:
+                StarVisible29 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey45.Height
+                    Height: =DataCardKey48.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey45.Y
+                    Y: =DataCardKey48.Y
                     ZIndex: =4
 
             Quantity92_DataCard1 As typedDataCard.numberEditCard:

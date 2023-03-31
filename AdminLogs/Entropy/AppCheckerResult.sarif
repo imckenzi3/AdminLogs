@@ -404,19 +404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard3.DataCardValue45.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard4.DataCardValue48.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard3.DataCardValue45.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard4.DataCardValue48.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "outgoingEdit",
-                "type": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard3.DataCardValue45"
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard4.DataCardValue48"
               }
             }
           ],
