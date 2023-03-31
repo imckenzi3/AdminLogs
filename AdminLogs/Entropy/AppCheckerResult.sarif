@@ -1484,36 +1484,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WalkEdit.EditContainer_3.EditForm1_3.'Reason for Visit_DataCard1'.DataCardValue65.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "WalkEdit.EditContainer_3.EditForm1_3.'Reason for Visit_DataCard1'.DataCardValue65.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "WalkEdit",
-                "type": "WalkEdit.EditContainer_3.EditForm1_3.'Reason for Visit_DataCard1'.DataCardValue65"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "WalkEdit.EditContainer_3.EditForm1_3.'Additional Notes_DataCard1'.DataCardValue64.AccessibleLabel"
                 }
               ],
