@@ -100,6 +100,7 @@
                 Height: =40
                 Required: =false
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =0
                 ZIndex: =4
@@ -138,6 +139,7 @@
                 Height: =40
                 Required: =false
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =1
                 ZIndex: =4
@@ -176,6 +178,7 @@
                 Height: =40
                 Required: =false
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =2
                 ZIndex: =4
@@ -214,6 +217,7 @@
                 Height: =40
                 Required: =false
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =3
                 ZIndex: =4
@@ -243,6 +247,7 @@
                     ZIndex: =2
 
         Footer_15 As Footer:
+            AlignInContainer: =AlignInContainer.Center
             LayoutMinHeight: =640
             ZIndex: =4
 

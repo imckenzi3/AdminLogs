@@ -85,6 +85,7 @@
                 Required: =false
                 Update: =Value(DataCardValue74.Text)
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =0
                 ZIndex: =4
@@ -157,6 +158,7 @@
                 Required: =false
                 Update: =Value(DataCardValue75.Text)
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =1
                 ZIndex: =4
@@ -229,6 +231,7 @@
                 Required: =false
                 Update: =Value(DataCardValue76.Text)
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =2
                 ZIndex: =4
@@ -301,6 +304,7 @@
                 Required: =false
                 Update: =Value(DataCardValue77.Text)
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =3
                 ZIndex: =4
