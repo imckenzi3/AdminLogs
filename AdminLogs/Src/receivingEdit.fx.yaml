@@ -85,6 +85,7 @@
                 Required: =false
                 Update: =DataCardValue1.Selected
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =0
                 ZIndex: =4
@@ -156,6 +157,7 @@
                 Required: =false
                 Update: =Value(DataCardValue4.Text)
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =1
                 ZIndex: =4
@@ -228,6 +230,7 @@
                 Required: =false
                 Update: =DataCardValue5.Selected
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =2
                 ZIndex: =4
@@ -301,6 +304,7 @@
                 Required: =false
                 Update: =DataCardValue6.Text
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =3
                 ZIndex: =4
@@ -318,7 +322,7 @@
 
                 DataCardValue6 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =DataCardValue5.Selected.Department
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
@@ -374,6 +378,7 @@
                 Required: =false
                 Update: =DataCardValue7.Text
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =4
                 ZIndex: =4
@@ -447,6 +452,7 @@
                 Required: =false
                 Update: =DataCardValue8.Text
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =5
                 ZIndex: =4
@@ -520,6 +526,7 @@
                 Required: =false
                 Update: =DataCardValue9.Text
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =6
                 ZIndex: =4
@@ -592,6 +599,7 @@
                 Required: =false
                 Update: =DataCardValue10.Value
                 Width: =640
+                WidthFit: =true
                 X: =0
                 Y: =7
                 ZIndex: =4
