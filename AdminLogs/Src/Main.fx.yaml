@@ -1,39 +1,5 @@
 "Main As screen.'phoneBrowseLayout_ver3.0'":
 
-    TextSearchBox1_5 As text:
-        Default: =""
-        DelayOutput: =true
-        Height: =68
-        HintText: ="Search items"
-        PaddingLeft: =70
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =7
-        RadiusTopLeft: =0
-        RadiusTopRight: =7
-        Size: =21
-        Width: =Parent.Width
-        ZIndex: =6
-
-    SearchIcon1_5 As icon.Search:
-        Color: =RGBA(191, 190, 190, 1)
-        Height: =Self.Width
-        Icon: =Icon.Search
-        PaddingBottom: =14
-        PaddingLeft: =14
-        PaddingRight: =14
-        PaddingTop: =14
-        Tooltip: ="Search"
-        Width: =TextSearchBox1_5.Height
-        X: =TextSearchBox1_5.X
-        Y: =TextSearchBox1_5.Y
-        ZIndex: =7
-
-    Rectangle11_5 As rectangle:
-        Height: =2
-        Width: =Parent.Width
-        Y: =TextSearchBox1_5.Y + TextSearchBox1_5.Height
-        ZIndex: =8
-
     BrowseContainer_5 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
@@ -47,7 +13,6 @@
 
         BrowseNavContainer_5 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(56, 96, 178, 1)
-            FillPortions: =0
             Height: =100
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -131,84 +96,6 @@
                 Width: =88
                 X: =Parent.Width - Self.Width
                 ZIndex: =5
-
-        "BrowseGallery1_6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-            Height: =Parent.Height - Self.Y
-            Items: =SortByColumns(Filter([@AdminLogs], StartsWith(Title, TextSearchBox1_5.Text)), "Title", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))
-            Layout: =Layout.Vertical
-            LayoutMinHeight: =287
-            LayoutMinWidth: =320
-            OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)
-            ShowScrollbar: =false
-            TemplatePadding: =0
-            TemplateSize: =Min(168, Self.Height - 60)
-            Width: =Parent.Width
-            Y: =TextSearchBox1_5.Y + TextSearchBox1_5.Height
-            ZIndex: =3
-
-            CitizenNameCompany_4 As label:
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.'Name of Citizen/Company '
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =1
-                ZIndex: =1
-
-            NextArrow1_6 As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Height: =60
-                Icon: =Icon.ChevronRight
-                OnSelect: =Select(Parent)
-                PaddingBottom: =10
-                PaddingLeft: =10
-                PaddingRight: =10
-                PaddingTop: =10
-                TabIndex: =0
-                Tooltip: ="View item details"
-                Width: =60
-                ZIndex: =4
-
-            Separator1_6 As rectangle:
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - 1
-                ZIndex: =5
-
-            PurposeOfCall_1 As label:
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    ="Purpose of Call: " & ThisItem.'Purpose of Call'
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =1
-                Y: =36
-                ZIndex: =6
-
-            EmployeeContact_1 As label:
-                Height: =107
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    ="Employee Contacted: " & ThisItem.'Employee Contacted'.DisplayName & " - " & ThisItem.'Employee Contacted'.JobTitle & "|" & ThisItem.'Employee Contacted'.Department
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =1
-                Y: =60
-                ZIndex: =7
 
         Footer_16 As Footer:
             AlignInContainer: =AlignInContainer.Stretch
