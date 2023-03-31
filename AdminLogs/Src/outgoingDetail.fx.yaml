@@ -27,7 +27,7 @@
                 AccessibleLabel: =Self.Tooltip
                 Height: =88
                 Icon: =Icon.ChevronLeft
-                OnSelect: =Navigate(BrowseScreen1, ScreenTransition.None)
+                OnSelect: =Navigate(outgoingBrowse, ScreenTransition.None)
                 PaddingBottom: =24
                 PaddingLeft: =24
                 PaddingRight: =24
@@ -54,7 +54,7 @@
                 DisplayMode: =If(!IsBlank(BrowseGallery1_1.Selected) && DataSourceInfo([@AdminLogs], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
                 Height: =88
                 Icon: =Icon.Trash
-                OnSelect: =Remove([@AdminLogs], BrowseGallery1_1.Selected); If (IsEmpty(Errors([@AdminLogs], BrowseGallery1_1.Selected)), Back())
+                OnSelect: =Remove([@OutGoingMailLogs], BrowseGallery1_2.Selected); If (IsEmpty(Errors([@OutGoingMailLogs], BrowseGallery1_2.Selected)), Back())
                 PaddingBottom: =24
                 PaddingLeft: =24
                 PaddingRight: =24
@@ -70,7 +70,7 @@
                 DisplayMode: =If(DataSourceInfo([@AdminLogs], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
                 Height: =88
                 Icon: =Icon.Edit
-                OnSelect: =EditForm(EditForm1);Navigate(EditScreen1, ScreenTransition.None)
+                OnSelect: =EditForm(EditForm1);Navigate(outgoingEdit, ScreenTransition.None)
                 PaddingBottom: =24
                 PaddingLeft: =24
                 PaddingRight: =24
@@ -82,30 +82,29 @@
                 ZIndex: =4
 
         DetailForm1_2 As formViewer:
-            DataSource: =[@OutGoingMailLogs]
+            DataSource: =OutGoingMailLogs
             Height: =Parent.Height - DetailForm1_2.Y
-            Item: =BrowseGallery1_1.Selected
+            Item: =BrowseGallery1_2.Selected
             LayoutMinHeight: =250
             LayoutMinWidth: =320
             Width: =Parent.Width
             ZIndex: =3
 
-            "'Name of Citizen/Company _DataCard1_2' As typedDataCard.textualViewCard":
+            Created_DataCard3 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="NameofCitizen_x002f_Company"
-                Default: =ThisItem.'Name of Citizen/Company '
+                DataField: ="Created"
+                Default: =ThisItem.Created
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"NameofCitizen_x002f_Company")
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Created")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =40
                 Required: =false
                 Width: =640
-                WidthFit: =true
                 X: =0
-                Y: =0
+                Y: =7
                 ZIndex: =1
 
-                DataCardKey1_2 As label:
+                DataCardKey41 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -116,7 +115,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue1_2 As label:
+                DataCardValue41 As label:
                     AutoHeight: =true
                     DisplayMode: =Parent.DisplayMode
                     PaddingLeft: =0
@@ -126,65 +125,25 @@
                     Text: =Parent.Default
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey1_2.Y + DataCardKey1_2.Height + 5
+                    Y: =DataCardKey41.Y + DataCardKey41.Height + 5
                     ZIndex: =2
 
-            "'Purpose of Call_DataCard1_2' As typedDataCard.textualViewCard":
+            "'Created By_DataCard3' As typedDataCard.comboBoxViewCard":
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="PurposeofCall"
-                Default: =ThisItem.'Purpose of Call'
+                DataField: ="Author"
+                Default: =ThisItem.'Created By'
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"PurposeofCall")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =40
-                Required: =false
-                Width: =640
-                WidthFit: =true
-                X: =0
-                Y: =1
-                ZIndex: =1
-
-                DataCardKey2_3 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue2_3 As label:
-                    AutoHeight: =true
-                    DisplayMode: =Parent.DisplayMode
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =21
-                    Text: =Parent.Default
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey2_3.Y + DataCardKey2_3.Height + 5
-                    ZIndex: =2
-
-            "'Employee Contacted_DataCard1_2' As typedDataCard.comboBoxViewCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="EmployeeContacted"
-                Default: =ThisItem.'Employee Contacted'
-                DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"EmployeeContacted")
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Author")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =DataCardValue3_3.Selected
+                Update: =DataCardValue42.Selected
                 Width: =640
-                WidthFit: =true
                 X: =0
-                Y: =2
+                Y: =8
                 ZIndex: =1
 
-                DataCardKey3_3 As label:
+                DataCardKey42 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -195,25 +154,25 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue3_3 As combobox:
+                DataCardValue42 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].'Employee Contacted')
+                    Items: =Choices([@OutGoingMailLogs].Author)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(AdminLogs.'Employee Contacted',DataCardValue3_3.SearchText)
+                    SearchItems: =Choices(OutGoingMailLogs.Author,DataCardValue42.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey3_3.Y + DataCardKey3_3.Height + 5
+                    Y: =DataCardKey42.Y + DataCardKey42.Height + 5
                     ZIndex: =2
 
-                ErrorMessage1_2 As label:
+                ErrorMessage24 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -226,36 +185,35 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue3_3.Y + DataCardValue3_3.Height
+                    Y: =DataCardValue42.Y + DataCardValue42.Height
                     ZIndex: =3
 
-                StarVisible1_2 As label:
+                StarVisible24 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey3_3.Height
+                    Height: =DataCardKey42.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey3_3.Y
+                    Y: =DataCardKey42.Y
                     ZIndex: =4
 
-            "'Employee Department/Ministry_DataCard1_2' As typedDataCard.textualViewCard":
+            Modified_DataCard3 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="EmployeeDepartment_x002f_Ministr"
-                Default: =ThisItem.'Employee Department/Ministry'
+                DataField: ="Modified"
+                Default: =ThisItem.Modified
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"EmployeeDepartment_x002f_Ministr")
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Modified")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =40
                 Required: =false
                 Width: =640
-                WidthFit: =true
                 X: =0
-                Y: =3
+                Y: =9
                 ZIndex: =1
 
-                DataCardKey4_2 As label:
+                DataCardKey43 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -266,7 +224,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue4_2 As label:
+                DataCardValue43 As label:
                     AutoHeight: =true
                     DisplayMode: =Parent.DisplayMode
                     PaddingLeft: =0
@@ -276,26 +234,25 @@
                     Text: =Parent.Default
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey4_2.Y + DataCardKey4_2.Height + 5
+                    Y: =DataCardKey43.Y + DataCardKey43.Height + 5
                     ZIndex: =2
 
-            "'Status of Call_DataCard1_2' As typedDataCard.comboBoxViewCard":
+            "'Modified By_DataCard3' As typedDataCard.comboBoxViewCard":
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="StatusofCall"
-                Default: =ThisItem.'Status of Call'
+                DataField: ="Editor"
+                Default: =ThisItem.'Modified By'
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"StatusofCall")
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Editor")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =DataCardValue5_2.Selected
+                Update: =DataCardValue44.Selected
                 Width: =640
-                WidthFit: =true
                 X: =0
-                Y: =4
+                Y: =10
                 ZIndex: =1
 
-                DataCardKey5_2 As label:
+                DataCardKey44 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -306,24 +263,25 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue5_2 As combobox:
+                DataCardValue44 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
-                    DisplayFields: =["Value"]
+                    DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@AdminLogs].'Status of Call')
+                    Items: =Choices([@OutGoingMailLogs].Editor)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SearchFields: =["Value"]
-                    SearchItems: =Choices(AdminLogs.'Status of Call',DataCardValue5_2.SearchText)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices(OutGoingMailLogs.Editor,DataCardValue44.SearchText)
                     SelectMultiple: =false
                     Size: =21
+                    Template: =ListItemTemplate.Person
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey5_2.Y + DataCardKey5_2.Height + 5
+                    Y: =DataCardKey44.Y + DataCardKey44.Height + 5
                     ZIndex: =2
 
-                ErrorMessage2_3 As label:
+                ErrorMessage25 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -336,36 +294,35 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue5_2.Y + DataCardValue5_2.Height
+                    Y: =DataCardValue44.Y + DataCardValue44.Height
                     ZIndex: =3
 
-                StarVisible2_3 As label:
+                StarVisible25 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey5_2.Height
+                    Height: =DataCardKey44.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey5_2.Y
+                    Y: =DataCardKey44.Y
                     ZIndex: =4
 
-            "'Additional Notes_DataCard1_2' As typedDataCard.textualViewCard":
+            Quantity92_DataCard2 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="AdditionalNotes"
-                Default: =ThisItem.'Additional Notes'
+                DataField: ="Quantity92"
+                Default: =ThisItem.Quantity92
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"AdditionalNotes")
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Quantity92")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =40
                 Required: =false
                 Width: =640
-                WidthFit: =true
                 X: =0
-                Y: =5
-                ZIndex: =1
+                Y: =0
+                ZIndex: =4
 
-                DataCardKey6_2 As label:
+                DataCardKey34 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -376,7 +333,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue6_2 As label:
+                DataCardValue34 As label:
                     AutoHeight: =true
                     DisplayMode: =Parent.DisplayMode
                     PaddingLeft: =0
@@ -386,24 +343,214 @@
                     Text: =Parent.Default
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey6_2.Y + DataCardKey6_2.Height + 5
+                    Y: =DataCardKey34.Y + DataCardKey34.Height + 5
                     ZIndex: =2
 
-            Created_DataCard1_1 As typedDataCard.textualViewCard:
+            TotalPostageCost92_DataCard2 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="Created"
-                Default: =ThisItem.Created
+                DataField: ="TotalPostageCost"
+                Default: =ThisItem.TotalPostageCost92
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Created")
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"TotalPostageCost")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =1
+                ZIndex: =4
+
+                DataCardKey35 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue35 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey35.Y + DataCardKey35.Height + 5
+                    ZIndex: =2
+
+            Quantity130_DataCard2 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Quantity130"
+                Default: =ThisItem.Quantity130
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Quantity130")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =2
+                ZIndex: =4
+
+                DataCardKey36 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue36 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                    ZIndex: =2
+
+            TotalPostageCost130_DataCard2 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="TotalPostageCost130"
+                Default: =ThisItem.TotalPostageCost130
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"TotalPostageCost130")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =3
+                ZIndex: =4
+
+                DataCardKey37 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue37 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey37.Y + DataCardKey37.Height + 5
+                    ZIndex: =2
+
+            "'TotalPostageCost130 (TotalPostageCost1300)_DataCard2' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="TotalPostageCost1300"
+                Default: =ThisItem.'TotalPostageCost130 (TotalPostageCost1300)'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"TotalPostageCost1300")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =4
+
+                DataCardKey38 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue38 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey38.Y + DataCardKey38.Height + 5
+                    ZIndex: =2
+
+            QuantityOther_DataCard2 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="QuantityOther"
+                Default: =ThisItem.QuantityOther
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"QuantityOther")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =5
+                ZIndex: =4
+
+                DataCardKey39 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue39 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey39.Y + DataCardKey39.Height + 5
+                    ZIndex: =2
+
+            TotalPostageCostOther_DataCard2 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="TotalPostageCostOther"
+                Default: =ThisItem.TotalPostageCostOther
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"TotalPostageCostOther")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =40
                 Required: =false
                 Width: =640
                 X: =0
                 Y: =6
-                ZIndex: =1
+                ZIndex: =4
 
-                DataCardKey13_1 As label:
+                DataCardKey40 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -414,7 +561,7 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue13_1 As label:
+                DataCardValue40 As label:
                     AutoHeight: =true
                     DisplayMode: =Parent.DisplayMode
                     PaddingLeft: =0
@@ -424,188 +571,8 @@
                     Text: =Parent.Default
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey13_1.Y + DataCardKey13_1.Height + 5
+                    Y: =DataCardKey40.Y + DataCardKey40.Height + 5
                     ZIndex: =2
-
-            "'Created By_DataCard1_1' As typedDataCard.comboBoxViewCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="Author"
-                Default: =ThisItem.'Created By'
-                DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Author")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =DataCardValue14_1.Selected
-                Width: =640
-                X: =0
-                Y: =7
-                ZIndex: =1
-
-                DataCardKey14_1 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue14_1 As combobox:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultSelectedItems: =Parent.Default
-                    DisplayFields: =["DisplayName","Email","Picture"]
-                    DisplayMode: =Parent.DisplayMode
-                    Height: =70
-                    Items: =Choices([@AdminLogs].'Created By')
-                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(AdminLogs.'Created By',DataCardValue14_1.SearchText)
-                    SelectMultiple: =false
-                    Size: =21
-                    Template: =ListItemTemplate.Person
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey14_1.Y + DataCardKey14_1.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage9_1 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =24
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue14_1.Y + DataCardValue14_1.Height
-                    ZIndex: =3
-
-                StarVisible9_1 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey14_1.Height
-                    Size: =21
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey14_1.Y
-                    ZIndex: =4
-
-            Modified_DataCard1_1 As typedDataCard.textualViewCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="Modified"
-                Default: =ThisItem.Modified
-                DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Modified")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =40
-                Required: =false
-                Width: =640
-                X: =0
-                Y: =8
-                ZIndex: =1
-
-                DataCardKey15_1 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue15_1 As label:
-                    AutoHeight: =true
-                    DisplayMode: =Parent.DisplayMode
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =21
-                    Text: =Parent.Default
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey15_1.Y + DataCardKey15_1.Height + 5
-                    ZIndex: =2
-
-            "'Modified By_DataCard1_1' As typedDataCard.comboBoxViewCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="Editor"
-                Default: =ThisItem.'Modified By'
-                DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"Editor")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =DataCardValue16_1.Selected
-                Width: =640
-                X: =0
-                Y: =9
-                ZIndex: =1
-
-                DataCardKey16_1 As label:
-                    AutoHeight: =true
-                    Height: =48
-                    Size: =21
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue16_1 As combobox:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultSelectedItems: =Parent.Default
-                    DisplayFields: =["DisplayName","Email","Picture"]
-                    DisplayMode: =Parent.DisplayMode
-                    Height: =70
-                    Items: =Choices([@AdminLogs].'Modified By')
-                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(AdminLogs.'Modified By',DataCardValue16_1.SearchText)
-                    SelectMultiple: =false
-                    Size: =21
-                    Template: =ListItemTemplate.Person
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey16_1.Y + DataCardKey16_1.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage10_1 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =24
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue16_1.Y + DataCardValue16_1.Height
-                    ZIndex: =3
-
-                StarVisible10_1 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey16_1.Height
-                    Size: =21
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey16_1.Y
-                    ZIndex: =4
 
         Footer_6 As Footer:
             LayoutMinHeight: =640
