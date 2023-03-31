@@ -28,6 +28,7 @@
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
+                OnSelect: =Navigate(BrowseScreen1)
                 Size: =21
                 Text: ="Call Logs"
                 Width: =280
@@ -37,6 +38,7 @@
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
+                OnSelect: =Navigate(receivingBrowse)
                 Size: =21
                 Text: ="Receiving Mail Logs"
                 Width: =280
@@ -46,6 +48,7 @@
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
+                OnSelect: =Navigate(WalkBrowse)
                 Size: =21
                 Text: ="Walk-In Logs"
                 Width: =280
@@ -55,6 +58,7 @@
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
+                OnSelect: =Navigate(outgoingBrowse)
                 Size: =21
                 Text: ="Outgoing Mail"
                 Width: =280
@@ -64,6 +68,7 @@
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
+                OnSelect: =Navigate(pitneyBrowse)
                 Size: =21
                 Text: ="Pitney Bowes"
                 Width: =280
