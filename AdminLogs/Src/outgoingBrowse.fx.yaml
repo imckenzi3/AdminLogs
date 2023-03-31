@@ -153,7 +153,8 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =ThisItem.'Name of Citizen/Company '
+                Text: |-
+                    ="Quantity: " & ThisItem.Quantity130
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 104
                 X: =1
@@ -179,36 +180,6 @@
                 Width: =Parent.TemplateWidth
                 Y: =Parent.TemplateHeight - 1
                 ZIndex: =5
-
-            PurposeOfCall_1 As label:
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    ="Purpose of Call: " & ThisItem.'Purpose of Call'
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =1
-                Y: =36
-                ZIndex: =6
-
-            EmployeeContact_1 As label:
-                Height: =107
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    ="Employee Contacted: " & ThisItem.'Employee Contacted'.DisplayName & " - " & ThisItem.'Employee Contacted'.JobTitle & "|" & ThisItem.'Employee Contacted'.Department
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =1
-                Y: =60
-                ZIndex: =7
 
         Footer_4 As Footer:
             AlignInContainer: =AlignInContainer.Stretch
