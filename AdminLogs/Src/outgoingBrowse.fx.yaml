@@ -154,7 +154,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Text: |-
-                    ="Quantity: " & ThisItem.Quantity130
+                    ="Quantity: " & ThisItem.'Quantity 1.30'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 104
                 X: =1

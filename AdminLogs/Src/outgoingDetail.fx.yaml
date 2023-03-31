@@ -160,10 +160,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@OutGoingMailLogs].Author)
+                    Items: =Choices([@OutGoingMailLogs].'Created By')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(OutGoingMailLogs.Author,DataCardValue42.SearchText)
+                    SearchItems: =Choices(OutGoingMailLogs.'Created By',DataCardValue42.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
@@ -269,10 +269,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@OutGoingMailLogs].Editor)
+                    Items: =Choices([@OutGoingMailLogs].'Modified By')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(OutGoingMailLogs.Editor,DataCardValue44.SearchText)
+                    SearchItems: =Choices(OutGoingMailLogs.'Modified By',DataCardValue44.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
@@ -311,7 +311,7 @@
             Quantity92_DataCard2 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Quantity92"
-                Default: =ThisItem.Quantity92
+                Default: =ThisItem.'Quantity 0.92'
                 DisplayMode: =DisplayMode.View
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Quantity92")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -387,7 +387,7 @@
             Quantity130_DataCard2 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Quantity130"
-                Default: =ThisItem.Quantity130
+                Default: =ThisItem.'Quantity 1.30'
                 DisplayMode: =DisplayMode.View
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Quantity130")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -501,7 +501,7 @@
             QuantityOther_DataCard2 As typedDataCard.textualViewCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="QuantityOther"
-                Default: =ThisItem.QuantityOther
+                Default: =ThisItem.'Quantity Other'
                 DisplayMode: =DisplayMode.View
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"QuantityOther")
                 Fill: =RGBA(0, 0, 0, 0)

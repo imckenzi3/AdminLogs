@@ -74,6 +74,77 @@
             Width: =Parent.Width
             ZIndex: =3
 
+            Ministry_DataCard1 As typedDataCard.comboBoxEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Ministry"
+                Default: =ThisItem.'Requested By Ministry'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Ministry")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue46.Selected
+                Width: =640
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey46 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue46 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@OutGoingMailLogs].'Requested By Ministry')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices(OutGoingMailLogs.'Requested By Ministry',DataCardValue46.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey46.Y + DataCardKey46.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage27 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue46.Y + DataCardValue46.Height
+                    ZIndex: =3
+
+                StarVisible27 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey46.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey46.Y
+                    ZIndex: =4
+
             TotalPostageCost130_DataCard3 As typedDataCard.numberEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="TotalPostageCost130"
@@ -86,7 +157,7 @@
                 Update: =Value(DataCardValue45.Text)
                 Width: =640
                 X: =0
-                Y: =3
+                Y: =4
                 ZIndex: =1
 
                 DataCardKey45 As label:
@@ -149,7 +220,7 @@
             Quantity92_DataCard1 As typedDataCard.numberEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Quantity92"
-                Default: =ThisItem.Quantity92
+                Default: =ThisItem.'Quantity 0.92'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Quantity92")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -158,7 +229,7 @@
                 Update: =Value(DataCardValue27.Text)
                 Width: =640
                 X: =0
-                Y: =0
+                Y: =1
                 ZIndex: =4
 
                 DataCardKey27 As label:
@@ -230,7 +301,7 @@
                 Update: =Value(DataCardValue28.Text)
                 Width: =640
                 X: =0
-                Y: =1
+                Y: =2
                 ZIndex: =4
 
                 DataCardKey28 As label:
@@ -246,7 +317,7 @@
 
                 DataCardValue28 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =92
+                    Default: =0.92
                     DelayOutput: =true
                     DisplayMode: =DisplayMode.Disabled
                     Format: =TextFormat.Number
@@ -293,7 +364,7 @@
             Quantity130_DataCard1 As typedDataCard.numberEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Quantity130"
-                Default: =ThisItem.Quantity130
+                Default: =ThisItem.'Quantity 1.30'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"Quantity130")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -302,7 +373,7 @@
                 Update: =Value(DataCardValue29.Text)
                 Width: =640
                 X: =0
-                Y: =2
+                Y: =3
                 ZIndex: =4
 
                 DataCardKey29 As label:
@@ -365,7 +436,7 @@
             QuantityOther_DataCard1 As typedDataCard.numberEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="QuantityOther"
-                Default: =ThisItem.QuantityOther
+                Default: =ThisItem.'Quantity Other'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"QuantityOther")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -374,7 +445,7 @@
                 Update: =Value(DataCardValue32.Text)
                 Width: =640
                 X: =0
-                Y: =4
+                Y: =5
                 ZIndex: =4
 
                 DataCardKey32 As label:
@@ -446,7 +517,7 @@
                 Update: =Value(DataCardValue33.Text)
                 Width: =640
                 X: =0
-                Y: =5
+                Y: =6
                 ZIndex: =4
 
                 DataCardKey33 As label:
