@@ -434,19 +434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard4.DataCardValue48.AccessibleLabel"
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost92_DataCard3.DataCardValue51.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard4.DataCardValue48.AccessibleLabel",
+                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost92_DataCard3.DataCardValue51.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "outgoingEdit",
-                "type": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost130_DataCard4.DataCardValue48"
+                "type": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost92_DataCard3.DataCardValue51"
               }
             }
           ],
@@ -507,36 +507,6 @@
                 "member": "AccessibleLabel",
                 "module": "outgoingEdit",
                 "type": "outgoingEdit.EditContainer_1.EditForm1_1.Quantity130_DataCard1.DataCardValue29"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost92_DataCard1.DataCardValue28.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost92_DataCard1.DataCardValue28.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "outgoingEdit",
-                "type": "outgoingEdit.EditContainer_1.EditForm1_1.TotalPostageCost92_DataCard1.DataCardValue28"
               }
             }
           ],

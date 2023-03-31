@@ -90,6 +90,44 @@
             Width: =Parent.Width
             ZIndex: =3
 
+            "'Postage Cost Other_DataCard2' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="PostageCostOther"
+                Default: =ThisItem.'Postage Cost Other'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@OutGoingMailLogs],DataSourceInfo.DisplayName,"PostageCostOther")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey50 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue50 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey50.Y + DataCardKey50.Height + 5
+                    ZIndex: =2
+
             Ministry_DataCard2 As typedDataCard.comboBoxViewCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Ministry"
@@ -171,7 +209,7 @@
                 Required: =false
                 Width: =640
                 X: =0
-                Y: =5
+                Y: =6
                 ZIndex: =1
 
                 DataCardKey41 As label:
@@ -210,7 +248,7 @@
                 Update: =DataCardValue42.Selected
                 Width: =640
                 X: =0
-                Y: =6
+                Y: =7
                 ZIndex: =1
 
                 DataCardKey42 As label:
@@ -280,7 +318,7 @@
                 Required: =false
                 Width: =640
                 X: =0
-                Y: =7
+                Y: =8
                 ZIndex: =1
 
                 DataCardKey43 As label:
@@ -319,7 +357,7 @@
                 Update: =DataCardValue44.Selected
                 Width: =640
                 X: =0
-                Y: =8
+                Y: =9
                 ZIndex: =1
 
                 DataCardKey44 As label:
@@ -503,7 +541,7 @@
                 Required: =false
                 Width: =640
                 X: =0
-                Y: =4
+                Y: =5
                 ZIndex: =4
 
                 DataCardKey40 As label:
