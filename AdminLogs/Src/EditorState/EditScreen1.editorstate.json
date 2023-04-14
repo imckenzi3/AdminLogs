@@ -4832,7 +4832,14 @@
         "Width",
         "Height",
         "ZIndex",
-        "OnSuccess",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Back()",
+          "InvariantPropertyName": "OnSuccess",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderThickness"
       ],
       "DynamicProperties": [
