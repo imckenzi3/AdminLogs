@@ -107,10 +107,10 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@ReceivingMailLogs].ParcelType)
+                    Items: =Choices([@ReceivingMailLogs].'Parcel Type')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(ReceivingMailLogs.ParcelType,DataCardValue1.SearchText)
+                    SearchItems: =Choices(ReceivingMailLogs.'Parcel Type',DataCardValue1.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Tooltip: =Parent.DisplayName
@@ -255,10 +255,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@ReceivingMailLogs].ToEmployee)
+                    Items: =Choices([@ReceivingMailLogs].'To Employee')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(ReceivingMailLogs.ToEmployee,DataCardValue5.SearchText)
+                    SearchItems: =Choices(ReceivingMailLogs.'To Employee',DataCardValue5.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person

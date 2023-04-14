@@ -13,7 +13,7 @@
             LayoutMinHeight: =640
 
         DetailNavContainer As groupContainer.horizontalAutoLayoutContainer:
-            Fill: =RGBA(56, 96, 178, 1)
+            Fill: =RGBA(39, 67, 125, 1)
             FillPortions: =0
             Height: =100
             LayoutAlignItems: =LayoutAlignItems.Center
@@ -609,6 +609,7 @@
                     ZIndex: =4
 
         Footer_2 As Footer:
+            FooterText: =DetailForm1_1.Height
             LayoutMinHeight: =640
             ZIndex: =4
 
