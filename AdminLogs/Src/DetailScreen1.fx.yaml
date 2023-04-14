@@ -609,6 +609,7 @@
                     ZIndex: =4
 
         Footer_2 As Footer:
+            FooterText: =DetailForm1_1.Height
             LayoutMinHeight: =640
             ZIndex: =4
 

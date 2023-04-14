@@ -1513,7 +1513,7 @@
         {
           "Category": "Data",
           "PropertyName": "FooterText",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

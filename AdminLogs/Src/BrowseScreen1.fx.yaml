@@ -217,6 +217,8 @@
 
         Footer_1 As Footer:
             AlignInContainer: =AlignInContainer.Stretch
+            FooterText: |
+                =BrowseGallery1_1.Height
             LayoutMinHeight: =640
             ZIndex: =5
 
