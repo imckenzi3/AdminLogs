@@ -67,7 +67,7 @@
         EditForm1 As form:
             DataSource: =[@AdminLogs]
             Height: =Parent.Height - EditForm1.Y
-            Item: =BrowseGallery1_1.Selected
+            Item: =//BrowseGallery1_1.Selected
             LayoutMinHeight: =250
             LayoutMinWidth: =320
             OnSuccess: =Back()
