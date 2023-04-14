@@ -174,7 +174,8 @@
                 TabIndex: =0
                 Tooltip: ="View item details"
                 Width: =60
-                X: =Parent.TemplateWidth - Self.Width - 5
+                X: =568
+                Y: =60
                 ZIndex: =4
 
             Separator1_1 As rectangle:
@@ -211,7 +212,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Parent.TemplateWidth - 104
                 X: =32
-                Y: =60
+                Y: =61
                 ZIndex: =7
 
         Footer_1 As Footer:
