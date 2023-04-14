@@ -251,6 +251,7 @@
 
                 DataCardValue9_1 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(39, 67, 125, 1)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
@@ -398,6 +399,7 @@
 
                 DataCardValue2 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    ChevronBackground: =RGBA(39, 67, 125, 1)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
@@ -598,6 +600,7 @@
 
         Footer_3 As Footer:
             AlignInContainer: =AlignInContainer.Center
+            FooterText: =EditForm1.Height
             LayoutMinHeight: =640
             ZIndex: =5
 
