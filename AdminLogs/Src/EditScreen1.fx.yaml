@@ -21,6 +21,8 @@
             LayoutMinHeight: =112
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =25
+            PaddingRight: =25
             ZIndex: =2
 
             IconCancel1_1 As icon.Cancel:
@@ -34,6 +36,7 @@
                 PaddingTop: =22
                 TabIndex: =0
                 Tooltip: ="Cancel item"
+                Visible: =false
                 Width: =88
                 ZIndex: =1
 
