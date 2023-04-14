@@ -106,10 +106,10 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@OutGoingMailLogs].Ministry)
+                    Items: =Choices([@OutGoingMailLogs].'Requested By Ministry')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(OutGoingMailLogs.Ministry,DataCardValue59.SearchText)
+                    SearchItems: =Choices(OutGoingMailLogs.'Requested By Ministry',DataCardValue59.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Tooltip: =Parent.DisplayName

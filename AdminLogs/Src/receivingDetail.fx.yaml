@@ -160,10 +160,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@ReceivingMailLogs].Author)
+                    Items: =Choices([@ReceivingMailLogs].'Created By')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(ReceivingMailLogs.Author,DataCardValue24.SearchText)
+                    SearchItems: =Choices(ReceivingMailLogs.'Created By',DataCardValue24.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
@@ -269,10 +269,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@ReceivingMailLogs].Editor)
+                    Items: =Choices([@ReceivingMailLogs].'Modified By')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(ReceivingMailLogs.Editor,DataCardValue26.SearchText)
+                    SearchItems: =Choices(ReceivingMailLogs.'Modified By',DataCardValue26.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
@@ -341,10 +341,10 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@ReceivingMailLogs].ParcelType)
+                    Items: =Choices([@ReceivingMailLogs].'Parcel Type')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(ReceivingMailLogs.ParcelType,DataCardValue11.SearchText)
+                    SearchItems: =Choices(ReceivingMailLogs.'Parcel Type',DataCardValue11.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Width: =Parent.Width - 60
@@ -451,10 +451,10 @@
                     DisplayFields: =["DisplayName","Email","Picture"]
                     DisplayMode: =Parent.DisplayMode
                     Height: =70
-                    Items: =Choices([@ReceivingMailLogs].ToEmployee)
+                    Items: =Choices([@ReceivingMailLogs].'To Employee')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices(ReceivingMailLogs.ToEmployee,DataCardValue17.SearchText)
+                    SearchItems: =Choices(ReceivingMailLogs.'To Employee',DataCardValue17.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
