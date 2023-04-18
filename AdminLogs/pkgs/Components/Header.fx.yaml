@@ -27,6 +27,7 @@ Header As CanvasComponent:
             ZIndex: =1
 
             HeaderImage As image:
+                AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(39, 67, 125, 1)
                 BorderThickness: =10
                 Fill: =RGBA(255, 255, 255, 1)
