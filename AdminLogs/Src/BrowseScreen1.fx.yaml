@@ -143,24 +143,82 @@
             LayoutMinWidth: =320
             OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)
             ShowScrollbar: =false
-            TemplatePadding: =0
+            TemplatePadding: =25
             TemplateSize: =Min(168, Self.Height - 60)
             Width: =Parent.Width
             Y: =TextSearchBox1.Y + TextSearchBox1.Height
-            ZIndex: =3
+            ZIndex: =4
 
-            CitizenNameCompany As label:
-                Height: =Self.Size * 1.8
+            Initials As label:
+                Height: =(BrowseGallery1_1.TemplateHeight)/3
+                OnSelect: =Select(Parent)
+                Size: =20
+                Text: =ThisItem.'Created By'.DisplayName
+                Width: =Parent.TemplateWidth/2
+                X: =InitialsLbl.Width
+                Y: =NameLbl.Height + PurposeLbl.Height
+                ZIndex: =1
+
+            InitialsLbl As label:
+                FontWeight: =FontWeight.Normal
+                Height: =(BrowseGallery1_1.TemplateHeight)/3
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Text: |-
+                    ="Created By:"
+                Width: =Parent.TemplateWidth/2
+                Y: =PurposeLbl.Height + NameLbl.Height
+                ZIndex: =2
+
+            Purpose As label:
+                Height: =(BrowseGallery1_1.TemplateHeight)/3
+                OnSelect: =Select(Parent)
+                Size: =20
+                Text: =ThisItem.'Purpose of Call'
+                Width: =Parent.TemplateWidth/3
+                X: =Name.X
+                Y: =56
+                ZIndex: =3
+
+            PurposeLbl As label:
+                Height: =(BrowseGallery1_1.TemplateHeight)/3
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =20
+                Text: |-
+                    ="Purpose of Call:"
+                Width: =Parent.TemplateWidth/2
+                X: =NameLbl.X
+                Y: =NameLbl.Height
+                ZIndex: =4
+
+            Name As label:
+                Height: =(BrowseGallery1_1.TemplateHeight)/3
+                OnSelect: =Select(Parent)
+                Size: =20
                 Text: =ThisItem.'Name of Citizen/Company '
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =32
-                ZIndex: =1
+                Width: =Parent.TemplateWidth/2
+                X: =Parent.TemplateWidth-Self.Width
+                ZIndex: =5
+
+            NameLbl As label:
+                FontWeight: =FontWeight.Normal
+                Height: =(BrowseGallery1_1.TemplateHeight)/3
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Name of Caller:"
+                Width: =Parent.TemplateWidth/2
+                ZIndex: =6
 
             NextArrow1_1 As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
@@ -174,49 +232,19 @@
                 TabIndex: =0
                 Tooltip: ="View item details"
                 Width: =60
-                X: =568
+                X: =Parent.TemplateWidth-Self.Width
                 Y: =60
-                ZIndex: =4
+                ZIndex: =7
 
             Separator1_1 As rectangle:
                 Height: =1
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
                 Y: =Parent.TemplateHeight - 1
-                ZIndex: =5
-
-            PurposeOfCall As label:
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    ="Purpose of Call: " & ThisItem.'Purpose of Call'
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =32
-                Y: =36
-                ZIndex: =6
-
-            EmployeeContact As label:
-                Height: =107
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    ="Employee Contacted: " & ThisItem.'Employee Contacted'.DisplayName & " - " & ThisItem.'Employee Contacted'.JobTitle & "|" & ThisItem.'Employee Contacted'.Department
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 104
-                X: =32
-                Y: =61
-                ZIndex: =7
+                ZIndex: =8
 
         Footer_1 As Footer:
-            AlignInContainer: =AlignInContainer.Stretch
+            AlignInContainer: =AlignInContainer.Center
             FooterText: |
                 =BrowseGallery1_1.Height
             LayoutMinHeight: =640
