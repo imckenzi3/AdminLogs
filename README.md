@@ -1,6 +1,6 @@
 ## AdminLogs
 
-AdminLogs is a general logging application. The initial purpose is to gather information submitted by the employee, and store the data consistently within an excel file.
+AdminLogs is a general logging application. The initial purpose is to gather data, and store it consistently.
 
 ## Connecting via github
 
@@ -15,3 +15,4 @@ AdminLogs is a general logging application. The initial purpose is to gather inf
 ## Installing
 
 ~Coming Soon
+
