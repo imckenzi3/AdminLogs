@@ -8,7 +8,6 @@
         ZIndex: =6
 
         Header_3 As Header:
-            AlignInContainer: =AlignInContainer.Stretch
             HomeScreen: =EditScreen1
             LayoutMinHeight: =640
 
@@ -68,9 +67,9 @@
                 ZIndex: =3
 
         EditForm1 As form:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DataSource: =[@AdminLogs]
             DefaultMode: =FormMode.New
-            FillPortions: =0
             Height: =Parent.Height - EditForm1.Y
             Item: =BrowseGallery1_1.Selected
             LayoutMinHeight: =250
@@ -604,9 +603,8 @@
                     ZIndex: =4
 
         Footer_3 As Footer:
-            AlignInContainer: =AlignInContainer.Center
             FooterText: =EditForm1.Height
             LayoutMinHeight: =640
-            Visible: =false
+            Visible: =true
             ZIndex: =5
 
