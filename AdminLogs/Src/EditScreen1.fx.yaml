@@ -605,5 +605,6 @@
             AlignInContainer: =AlignInContainer.Center
             FooterText: =EditForm1.Height
             LayoutMinHeight: =640
+            Visible: =false
             ZIndex: =5
 
