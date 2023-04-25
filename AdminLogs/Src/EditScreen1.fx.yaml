@@ -70,6 +70,7 @@
         EditForm1 As form:
             DataSource: =[@AdminLogs]
             DefaultMode: =FormMode.New
+            FillPortions: =0
             Height: =Parent.Height - EditForm1.Y
             Item: =BrowseGallery1_1.Selected
             LayoutMinHeight: =250
