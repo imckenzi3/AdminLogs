@@ -4897,7 +4897,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "EditForm1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5096,7 +5096,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EditNavContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7669,7 +7669,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Footer_3",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
