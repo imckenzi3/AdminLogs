@@ -27,6 +27,7 @@
             IconCancel1_1 As icon.Cancel:
                 AccessibleLabel: =Self.Tooltip
                 Color: =RGBA(39, 67, 125, 1)
+                DisplayMode: =DisplayMode.Disabled
                 Height: =88
                 Icon: =Icon.Cancel
                 OnSelect: =ResetForm(EditForm1);Back()
