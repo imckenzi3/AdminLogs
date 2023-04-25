@@ -1,4 +1,4 @@
 App As appinfo:
     BackEnabled: =false
-    StartScreen: =BrowseScreen1
+    StartScreen: =EditScreen1
 
