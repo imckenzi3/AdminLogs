@@ -9,7 +9,7 @@
 
         Header_3 As Header:
             AlignInContainer: =AlignInContainer.Stretch
-            HomeScreen: =Main
+            HomeScreen: =EditScreen1
             LayoutMinHeight: =640
 
         EditNavContainer As groupContainer.horizontalAutoLayoutContainer:
@@ -26,6 +26,8 @@
 
             IconCancel1_1 As icon.Cancel:
                 AccessibleLabel: =Self.Tooltip
+                DisabledColor: =RGBA(39, 67, 125, 1)
+                DisplayMode: =DisplayMode.Disabled
                 Height: =88
                 Icon: =Icon.Cancel
                 OnSelect: =ResetForm(EditForm1);Back()
@@ -66,13 +68,14 @@
                 ZIndex: =3
 
         EditForm1 As form:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DataSource: =[@AdminLogs]
             DefaultMode: =FormMode.New
             Height: =Parent.Height - EditForm1.Y
             Item: =BrowseGallery1_1.Selected
             LayoutMinHeight: =250
             LayoutMinWidth: =320
-            OnSuccess: =Notify("Call Logged", NotificationType.Success) && Back()
+            OnSuccess: =Notify("Call Logged", NotificationType.Success) && NewForm(EditForm1)
             Width: =Parent.Width
             ZIndex: =3
 
@@ -604,5 +607,6 @@
             AlignInContainer: =AlignInContainer.Center
             FooterText: =EditForm1.Height
             LayoutMinHeight: =640
+            Visible: =true
             ZIndex: =5
 
