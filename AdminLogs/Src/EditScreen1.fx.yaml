@@ -8,6 +8,7 @@
         ZIndex: =6
 
         Header_3 As Header:
+            AlignInContainer: =AlignInContainer.Stretch
             HomeScreen: =EditScreen1
             LayoutMinHeight: =640
 
@@ -603,6 +604,7 @@
                     ZIndex: =4
 
         Footer_3 As Footer:
+            AlignInContainer: =AlignInContainer.Center
             FooterText: =EditForm1.Height
             LayoutMinHeight: =640
             Visible: =true
