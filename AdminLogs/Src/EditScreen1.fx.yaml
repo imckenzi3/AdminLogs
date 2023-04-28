@@ -311,7 +311,12 @@
                 Height: =50
                 MaxLength: =DataSourceInfo([@AdminLogs], DataSourceInfo.MaxLength, "EmployeeDepartment_x002f_Ministr")
                 Required: =false
-                Update: =DataCardValue10_1.Text
+                Update: |-
+                    =//DataCardValue10_1.Text
+                    
+                    //If no employee department IE IT has not updated the directory hence fill with n/a
+                    
+                    If(IsBlank(DataCardValue10_1.Text), "n/a", DataCardValue10_1.Text)
                 Width: =640
                 WidthFit: =true
                 X: =0
