@@ -13,6 +13,7 @@
       "allowmultiplescreensincanvaspages": false,
       "appinsightserrortracing": false,
       "appinstrumentationcorrelationtracing": false,
+      "asyncnodedelegation": false,
       "autocreateenvironmentvariables": false,
       "backfromhostaction": false,
       "behaviorpropertyui": false,
@@ -62,6 +63,7 @@
       "herocontrols": false,
       "improvedmediacapture": false,
       "improvedtabstopbehavior": false,
+      "impurenodedelegation": false,
       "keeprecentscreensloaded": false,
       "longlivingcache": false,
       "mobilenativerendering": false,
@@ -92,6 +94,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -109,7 +112,8 @@
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
     "Name": "AdminLogs",
-    "OriginatingVersion": "1.330"
+    "OriginatingVersion": "1.330",
+    "ParserErrorCount": 0
   },
   "PublishInfo": {
     "AppName": "AdminLogs",

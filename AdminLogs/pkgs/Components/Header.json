@@ -192,7 +192,7 @@
                 "Name": "HeaderImage",
                 "Parent": "VertContainerUpper",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 491,
+                "PublishOrderIndex": 496,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -517,7 +517,7 @@
             "Name": "VertContainerUpper",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 490,
+            "PublishOrderIndex": 495,
             "Rules": [
               {
                 "Category": "Design",
@@ -705,7 +705,7 @@
         "Name": "HeaderContainer",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 489,
+        "PublishOrderIndex": 494,
         "Rules": [
           {
             "Category": "Design",
@@ -864,7 +864,7 @@
       "HomeScreen",
       "HeaderFontSize"
     ],
-    "LastModifiedTimestamp": "638182994776222052",
+    "LastModifiedTimestamp": "638187271793496385",
     "Name": "Header",
     "Rules": [
       {
@@ -969,7 +969,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638182994776222052",
+  "LastModifiedTimestamp": "638187271793496385",
   "Name": "0bdd8fec78394b07b1492cb94efd0931",
   "OverridableProperties": {},
   "SourceLibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
