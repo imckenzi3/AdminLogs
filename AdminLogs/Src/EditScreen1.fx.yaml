@@ -531,9 +531,9 @@
                 RichTextEditor1 As richTextEditor:
                     Default: ="Enter some <strong>rich text</strong> here."
                     Height: =155
-                    Width: =580
+                    Width: =Parent.Width - 60
                     X: =30
-                    Y: =63
+                    Y: =DataCardKey12_1.Y + DataCardKey12_1.Height + 5
                     ZIndex: =5
 
             "'Auto Notes_DataCard1' As typedDataCard.textualEditCard":
