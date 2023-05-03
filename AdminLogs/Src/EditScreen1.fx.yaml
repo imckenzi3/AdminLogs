@@ -460,7 +460,7 @@
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@AdminLogs],DataSourceInfo.DisplayName,"AdditionalNotes")
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
+                Height: =215
                 MaxLength: =DataSourceInfo([@AdminLogs], DataSourceInfo.MaxLength, "AdditionalNotes")
                 Required: =false
                 Update: =DataCardValue12_1.Text
@@ -527,6 +527,14 @@
                     Wrap: =false
                     Y: =DataCardKey12_1.Y
                     ZIndex: =4
+
+                RichTextEditor1 As richTextEditor:
+                    Default: ="Enter some <strong>rich text</strong> here."
+                    Height: =140
+                    Width: =580
+                    X: =30
+                    Y: =63
+                    ZIndex: =5
 
             "'Auto Notes_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
